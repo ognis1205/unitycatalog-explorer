@@ -4,6 +4,7 @@
  * @copyright Copyright (C) 2024 Shingo OKAWA and a number of other contributors
  * @license Apache-2.0
  */
+import { theme } from '@/utils/chakra/theme';
 import type { Preview } from '@storybook/react';
 
 const preview: Preview = {
@@ -13,6 +14,9 @@ const preview: Preview = {
         color: /(background|color)$/i,
         date: /Date$/i,
       },
+    },
+    chakra: {
+      theme,
     },
   },
 };
