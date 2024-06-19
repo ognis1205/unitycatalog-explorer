@@ -1,0 +1,18 @@
+# See https://prettier.io/docs/en/configuration.html for more about ignoring files.
+
+# dependencise
+node_modules/
+
+# next.js
+.next/
+out/
+
+# production
+build/
+dist/
+public/
+package-lock.json
+
+# configurations
+*.cjs
+*.mjs

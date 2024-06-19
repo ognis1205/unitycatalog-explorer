@@ -1,24 +1,70 @@
 {
   "name": "unitycatalog-explorer",
   "version": "0.1.0",
+  "description": "A Typescript/Next.js based Web UI for the Unity Catalog OSS",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "run-p -l -c --aggregate-output lint:*",
+    "lint:eslint": "eslint .",
+    "lint:prettier": "prettier --check .",
+    "fix": "run-s fix:prettier fix:eslint",
+    "fix:eslint": "npm run lint:eslint -- --fix",
+    "fix:prettier": "npm run lint:prettier -- --write",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ognis1205/unitycatalog-explorer.git"
+  },
+  "keywords": [
+    "data engineering",
+    "data fatalog",
+    "delta lake",
+    "iceberg"
+  ],
+  "author": "Shingo OKAWA <shingo.okawa.g.h.c@gmail.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/ognis1205/unitycatalog-explorer/issues"
+  },
+  "homepage": "https://github.com/ognis1205/unitycatalog-explorer",
   "dependencies": {
+    "@chakra-ui/next-js": "^2.2.0",
+    "@chakra-ui/react": "^2.8.2",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "framer-motion": "^11.2.10",
+    "next": "14.2.4",
     "react": "^18",
-    "react-dom": "^18",
-    "next": "14.2.4"
+    "react-dom": "^18"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@chromatic-com/storybook": "^1.5.0",
+    "@storybook/addon-essentials": "^8.1.10",
+    "@storybook/addon-interactions": "^8.1.10",
+    "@storybook/addon-links": "^8.1.10",
+    "@storybook/addon-onboarding": "^8.1.10",
+    "@storybook/blocks": "^8.1.10",
+    "@storybook/nextjs": "^8.1.10",
+    "@storybook/react": "^8.1.10",
+    "@storybook/test": "^8.1.10",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@typescript-eslint/eslint-plugin": "^7.13.1",
+    "@typescript-eslint/parser": "^7.13.1",
     "eslint": "^8",
-    "eslint-config-next": "14.2.4"
+    "eslint-config-next": "14.2.4",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-storybook": "^0.8.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^3.3.2",
+    "prettier-plugin-organize-imports": "^3.2.4",
+    "storybook": "^8.1.10",
+    "typescript": "^5"
   }
 }

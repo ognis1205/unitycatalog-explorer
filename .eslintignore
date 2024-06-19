@@ -1,0 +1,26 @@
+# See https://eslint.org/docs/latest/use/configure/ignore/ for more about ignoring files.
+# NOTE:
+#  As of [06/17/2024], Next.js 14 does not officially support `eslint.config.js.` Although
+#  the official ESLint documentation recommends using `eslint.config.js,` given the context,
+#  we use `.eslintignore` instead.
+
+# dependencise
+node_modules/
+
+# next.js
+.next/
+out/
+
+# production
+build/
+dist/
+public/
+package-lock.json
+
+# typescript
+tsconfig.json
+src/env.d.ts
+
+# configurations
+*.cjs
+*.mjs
