@@ -6,10 +6,9 @@
  */
 'use client';
 
-//import { Heading, Text } from '@chakra-ui/react';
-
-import { Component as Box } from '@/components/atoms/Box';
+import { Component as Flex } from '@/components/atoms/Flex';
 import { Component as PreloaderLogo } from '@/components/atoms/PreloaderLogo';
+import { Component as PreloaderText } from '@/components/atoms/PreloaderText';
 import { Component as Stack } from '@/components/atoms/Stack';
 
 import type { Props as StackProps } from '@/components/atoms/Stack';
@@ -22,7 +21,7 @@ export type Props = Omit<
 
 export const Component: FC<Props> = (props: Props) => (
   <Stack {...props} align="center" textAlign="center">
-    <Box boxSize={200}>
+    <Flex boxSize={200} textAlign="center">
       <PreloaderLogo
         initial={{
           fillOpacity: 0,
@@ -36,7 +35,22 @@ export const Component: FC<Props> = (props: Props) => (
         strokeWidth={0.5}
         strokeDasharray="0 1"
       />
-    </Box>
+    </Flex>
+    <Flex width={100} textAlign="center">
+      <PreloaderText
+        initial={{
+          fillOpacity: 0,
+          pathLength: 0,
+        }}
+        animate={{
+          fillOpacity: 1,
+          pathLength: 1,
+        }}
+        transition={{ duration: 1, ease: 'easeInOut' }}
+        strokeWidth={0.5}
+        strokeDasharray="0 1"
+      />
+    </Flex>
   </Stack>
 );
 

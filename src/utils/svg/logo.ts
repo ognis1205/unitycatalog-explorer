@@ -155,7 +155,7 @@ export const svgMotionLogoSquareDefs: SVGMotionPathProps[] = [
 
 export const svgMotionTitleDefs: SVGMotionLogoProps = {
   xmlns: 'http://www.w3.org/2000/svg',
-  viewBox: '0 0 592.9 93.001',
+  viewBox: '0 0 120.114 72.001',
   role: 'presentation',
 } as const;
 
