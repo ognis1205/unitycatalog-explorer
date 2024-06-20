@@ -14,6 +14,7 @@ const config: StorybookConfig = {
     '@storybook/addon-essentials',
     '@chromatic-com/storybook',
     '@storybook/addon-interactions',
+    '@chakra-ui/storybook-addon',
   ],
   framework: {
     name: '@storybook/nextjs',
