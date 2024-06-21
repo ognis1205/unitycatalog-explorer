@@ -1,17 +1,12 @@
 /**
- * @fileoverview Defines PreloaderLogo atom.
+ * @fileoverview Defines PreloaderText molucule.
  * @author Shingo OKAWA <shingo.okawa.g.h.c@gmail.com>
  * @copyright Copyright (C) 2024 Shingo OKAWA and a number of other contributors
  * @license Apache-2.0
  */
 import { motion } from 'framer-motion';
 
-import {
-  svgMotionLogoDefs,
-  svgMotionLogoHexagonDefs,
-  svgMotionLogoSquareDefs,
-  svgMotionLogoTriangleDefs,
-} from '@/utils/svg/logo';
+import { svgMotionTitleDefs, svgMotionTitleTextDefs } from '@/utils/svg/logo';
 
 import type { SVGMotionLogoProps, SVGMotionPathProps } from '@/utils/svg/logo';
 import type { FC } from 'react';
@@ -32,32 +27,10 @@ export const Component: FC<Props> = ({
   strokeDasharray,
   ...props
 }: Props) => (
-  <motion.svg {...props} {...svgMotionLogoDefs}>
-    {svgMotionLogoHexagonDefs.map((h, index) => (
-      <motion.path
-        {...h}
-        key={index}
-        initial={initial}
-        animate={animate}
-        transition={transition}
-        strokeWidth={strokeWidth}
-        strokeDasharray={strokeDasharray}
-      ></motion.path>
-    ))}
-    {svgMotionLogoTriangleDefs.map((t, index) => (
+  <motion.svg {...props} {...svgMotionTitleDefs}>
+    {svgMotionTitleTextDefs.map((t, index) => (
       <motion.path
         {...t}
-        key={index}
-        initial={initial}
-        animate={animate}
-        transition={transition}
-        strokeWidth={strokeWidth}
-        strokeDasharray={strokeDasharray}
-      ></motion.path>
-    ))}
-    {svgMotionLogoSquareDefs.map((s, index) => (
-      <motion.path
-        {...s}
         key={index}
         initial={initial}
         animate={animate}
@@ -69,4 +42,4 @@ export const Component: FC<Props> = ({
   </motion.svg>
 );
 
-Component.displayName = 'PreloaderLogo';
+Component.displayName = 'PreloaderText';

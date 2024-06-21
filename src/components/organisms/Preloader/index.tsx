@@ -1,5 +1,5 @@
 /**
- * @fileoverview Defines Splash organism.
+ * @fileoverview Defines Preloader organism.
  * @author Shingo OKAWA <shingo.okawa.g.h.c@gmail.com>
  * @copyright Copyright (C) 2024 Shingo OKAWA and a number of other contributors
  * @license Apache-2.0
@@ -7,9 +7,9 @@
 'use client';
 
 import { Component as Flex } from '@/components/atoms/Flex';
-import { Component as PreloaderLogo } from '@/components/atoms/PreloaderLogo';
-import { Component as PreloaderText } from '@/components/atoms/PreloaderText';
 import { Component as Stack } from '@/components/atoms/Stack';
+import { Component as PreloaderLogo } from '@/components/molecules/PreloaderLogo';
+import { Component as PreloaderText } from '@/components/molecules/PreloaderText';
 
 import type { Props as StackProps } from '@/components/atoms/Stack';
 import type { FC } from 'react';
@@ -54,4 +54,4 @@ export const Component: FC<Props> = (props: Props) => (
   </Stack>
 );
 
-Component.displayName = 'Splash';
+Component.displayName = 'Preloader';
