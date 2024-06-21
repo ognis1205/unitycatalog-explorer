@@ -53,7 +53,7 @@ export const SizeSm: Story = {
     as: 'h5',
     size: 'sm',
   },
-  render: (args) => <Heading {...args}>(md) Heading</Heading>,
+  render: (args) => <Heading {...args}>(sm) Heading</Heading>,
 };
 
 export default meta;

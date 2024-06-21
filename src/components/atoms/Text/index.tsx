@@ -1,5 +1,5 @@
 /**
- * @fileoverview Defines Stack atom (re-exportation for backward compatibility.).
+ * @fileoverview Defines Text atom (re-exportation for backward compatibility.).
  * @see {@link https://github.com/chakra-ui/chakra-ui/discussions/3435|GitHub}
  * @see {@link https://v2.chakra-ui.com/docs/styled-system/chakra-factory|ChakraUI}
  * @see {@link https://zenn.dev/t_keshi/scraps/2322ed9224457a|Zenn(Japanese)}
@@ -9,17 +9,17 @@
  */
 'use client';
 
-import { css, Stack } from '@chakra-ui/react';
+import { Text, css } from '@chakra-ui/react';
 import styled from '@emotion/styled';
 
-import type { StackProps } from '@chakra-ui/react';
+import type { TextProps } from '@chakra-ui/react';
 
-export type Props = StackProps;
+export type Props = TextProps;
 
-export const Component = styled(Stack)((props) =>
+export const Component = styled(Text)((props) =>
   css({
     // Placeholder.
   })(props.theme),
 );
 
-Component.displayName = 'Stack';
+Component.displayName = 'Text';

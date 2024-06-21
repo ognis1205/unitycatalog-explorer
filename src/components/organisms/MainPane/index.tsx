@@ -11,7 +11,7 @@ import Head from 'next/head';
 
 import { Component as Box } from '@/components/atoms/Box';
 
-import type { BoxProps } from '@chakra-ui/react';
+import type { Props as BoxProps } from '@/components/atoms/Box';
 import type { FC, ReactNode } from 'react';
 
 export type Props = BoxProps & {
