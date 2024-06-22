@@ -61,6 +61,12 @@ export const Variants: Story = {
       <Button {...args} colorScheme="teal" variant="menu">
         Menu
       </Button>
+      <Button {...args} variant="route">
+        Route
+      </Button>
+      <Button {...args} colorScheme="teal" variant="route">
+        Route
+      </Button>
     </Flex>
   ),
 };
