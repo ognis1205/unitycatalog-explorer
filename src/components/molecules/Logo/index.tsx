@@ -4,6 +4,8 @@
  * @copyright Copyright (C) 2024 Shingo OKAWA and a number of other contributors
  * @license Apache-2.0
  */
+'use client';
+
 import { defaultColorOf } from '@/utils/chakra/theme';
 import {
   svgLogoDefs,
@@ -28,9 +30,9 @@ export const Component: FC<Props> = ({
   color = 'default',
   ...props
 }: Props) => {
-  let hColor = defaultColorOf('UnityDarkBlue');
-  let tColor = defaultColorOf('UnityYellow');
-  let sColor = defaultColorOf('UnityPink');
+  let hColor = defaultColorOf('ucDarkBlue');
+  let tColor = defaultColorOf('ucYellow');
+  let sColor = defaultColorOf('ucPink');
 
   switch (color) {
     case 'black':

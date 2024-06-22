@@ -4,6 +4,7 @@
  * @copyright Copyright (C) 2024 Shingo OKAWA and a number of other contributors
  * @license Apache-2.0
  */
+import { Component as Flex } from '@/components/atoms/Flex';
 import { Component as Heading } from '@/components/atoms/Heading';
 
 import type { Meta, StoryObj } from '@storybook/react';
@@ -15,45 +16,41 @@ const meta = {
 
 type Story = StoryObj<typeof meta>;
 
-export const Size4Xl: Story = {
-  args: {
-    as: 'h1',
-    size: '4xl',
-    noOfLines: 1,
-  },
-  render: (args) => <Heading {...args}>(4xl) Heading</Heading>,
+export const Default: Story = {
+  args: {},
+  render: (args) => <Heading {...args}>Default</Heading>,
 };
 
-export const Size2Xl: Story = {
-  args: {
-    as: 'h2',
-    size: '2xl',
-  },
-  render: (args) => <Heading {...args}>(2xl) Heading</Heading>,
-};
-
-export const SizeLg: Story = {
-  args: {
-    as: 'h3',
-    size: 'lg',
-  },
-  render: (args) => <Heading {...args}>(lg) Heading</Heading>,
-};
-
-export const SizeMd: Story = {
-  args: {
-    as: 'h4',
-    size: 'md',
-  },
-  render: (args) => <Heading {...args}>(md) Heading</Heading>,
-};
-
-export const SizeSm: Story = {
-  args: {
-    as: 'h5',
-    size: 'sm',
-  },
-  render: (args) => <Heading {...args}>(sm) Heading</Heading>,
+export const Sizes: Story = {
+  args: {},
+  render: (args) => (
+    <Flex direction="column">
+      <Heading {...args} as="h1" size="4xl" noOfLines={1}>
+        (4xl) Heading
+      </Heading>
+      <Heading {...args} as="h1" size="3xl" noOfLines={1}>
+        (3xl) Heading
+      </Heading>
+      <Heading {...args} as="h2" size="2xl">
+        (2xl) Heading
+      </Heading>
+      <Heading {...args} as="h2" size="xl">
+        (xl) Heading
+      </Heading>
+      <Heading {...args} as="h3" size="lg">
+        (lg) Heading
+      </Heading>
+      <Heading {...args} as="h4" size="md">
+        (md) Heading
+      </Heading>
+      <Heading {...args} as="h5" size="sm">
+        (sm) Heading
+      </Heading>
+      <Heading {...args} as="h5" size="xs">
+        (xs) Heading
+      </Heading>
+    </Flex>
+  ),
 };
 
 export default meta;

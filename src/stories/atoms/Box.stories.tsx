@@ -5,6 +5,7 @@
  * @license Apache-2.0
  */
 import { Component as Box } from '@/components/atoms/Box';
+import { Component as Flex } from '@/components/atoms/Flex';
 
 import type { Meta, StoryObj } from '@storybook/react';
 
@@ -15,28 +16,56 @@ const meta = {
 
 type Story = StoryObj<typeof meta>;
 
-export const Size100: Story = {
-  args: {
-    boxSize: '100',
-    bg: 'UnityPink.500',
-  },
-  render: (args) => <Box {...args} />,
+export const Default: Story = {
+  args: {},
+  render: (args) => (
+    <Flex direction="row">
+      <Box {...args}>Default</Box>
+    </Flex>
+  ),
 };
 
-export const Size200: Story = {
+export const Sizes: Story = {
   args: {
-    boxSize: '200',
-    bg: 'UnityYellow.500',
+    color: 'white',
+    bg: 'black',
   },
-  render: (args) => <Box {...args} />,
+  render: (args) => (
+    <Flex direction="row">
+      <Box {...args} boxSize="50">
+        50
+      </Box>
+      <Box {...args} boxSize="100">
+        100
+      </Box>
+      <Box {...args} boxSize="150">
+        150
+      </Box>
+    </Flex>
+  ),
 };
 
-export const Size300: Story = {
+export const Colors: Story = {
   args: {
-    boxSize: '300',
-    bg: 'UnityDarkBlue.950',
+    boxSize: 100,
+    color: 'white',
   },
-  render: (args) => <Box {...args} />,
+  render: (args) => (
+    <Flex direction="row">
+      <Box {...args} bg="ucPink.500">
+        Pink
+      </Box>
+      <Box {...args} bg="ucYellow.500">
+        Yellow
+      </Box>
+      <Box {...args} bg="ucDarkBlue.900">
+        Navy
+      </Box>
+      <Box {...args} bg="ucDarkBlue.950">
+        Dark Blue
+      </Box>
+    </Flex>
+  ),
 };
 
 export default meta;

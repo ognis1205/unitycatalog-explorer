@@ -15,28 +15,29 @@ const meta = {
 
 type Story = StoryObj<typeof meta>;
 
-export const Horizontal: Story = {
-  args: {
-    direction: 'row',
-  },
+export const Default: Story = {
+  args: {},
   render: (args) => (
-    <Flex {...args}>
-      <div>item1</div>
-      <div>item2</div>
-      <div>item3</div>
+    <Flex direction="row">
+      <Flex {...args}>Default</Flex>
     </Flex>
   ),
 };
 
-export const Vertical: Story = {
-  args: {
-    direction: 'column',
-  },
+export const Directions: Story = {
+  args: {},
   render: (args) => (
-    <Flex {...args}>
-      <div>item1</div>
-      <div>item2</div>
-      <div>item3</div>
+    <Flex direction="row">
+      <Flex {...args} direction="row">
+        <div>Row</div>
+        <div>Row</div>
+        <div>Row</div>
+      </Flex>
+      <Flex {...args} direction="column">
+        <div>Column</div>
+        <div>Column</div>
+        <div>Column</div>
+      </Flex>
     </Flex>
   ),
 };

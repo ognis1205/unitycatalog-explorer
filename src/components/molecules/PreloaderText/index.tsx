@@ -4,6 +4,8 @@
  * @copyright Copyright (C) 2024 Shingo OKAWA and a number of other contributors
  * @license Apache-2.0
  */
+'use client';
+
 import { motion } from 'framer-motion';
 
 import { svgMotionTitleDefs, svgMotionTitleTextDefs } from '@/utils/svg/logo';

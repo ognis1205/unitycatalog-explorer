@@ -168,8 +168,8 @@ export const svgMotionLogoHexagonDefs: SVGMotionPathProps[] = [
       'L 35.34 24.416',
       'Z',
     ].join(' '),
-    fill: defaultColorOf('UnityDarkBlue'),
-    stroke: defaultColorOf('UnityDarkBlue'),
+    fill: defaultColorOf('ucDarkBlue'),
+    stroke: defaultColorOf('ucDarkBlue'),
   } as const,
 ] as const;
 
@@ -182,8 +182,8 @@ export const svgMotionLogoTriangleDefs: SVGMotionPathProps[] = [
       'L 57.5698 23.756',
       'Z',
     ].join(' '),
-    fill: defaultColorOf('UnityYellow'),
-    stroke: defaultColorOf('UnityYellow'),
+    fill: defaultColorOf('ucYellow'),
+    stroke: defaultColorOf('ucYellow'),
   } as const,
   {
     d: [
@@ -193,8 +193,8 @@ export const svgMotionLogoTriangleDefs: SVGMotionPathProps[] = [
       'H 57.5698',
       'Z',
     ].join(' '),
-    fill: defaultColorOf('UnityYellow'),
-    stroke: defaultColorOf('UnityYellow'),
+    fill: defaultColorOf('ucYellow'),
+    stroke: defaultColorOf('ucYellow'),
   } as const,
   {
     d: [
@@ -204,8 +204,8 @@ export const svgMotionLogoTriangleDefs: SVGMotionPathProps[] = [
       'L 29.27 72.776',
       'Z',
     ].join(' '),
-    fill: defaultColorOf('UnityYellow'),
-    stroke: defaultColorOf('UnityYellow'),
+    fill: defaultColorOf('ucYellow'),
+    stroke: defaultColorOf('ucYellow'),
   } as const,
   {
     d: [
@@ -215,8 +215,8 @@ export const svgMotionLogoTriangleDefs: SVGMotionPathProps[] = [
       'H 0.970215',
       'Z',
     ].join(' '),
-    fill: defaultColorOf('UnityYellow'),
-    stroke: defaultColorOf('UnityYellow'),
+    fill: defaultColorOf('ucYellow'),
+    stroke: defaultColorOf('ucYellow'),
   } as const,
   {
     d: [
@@ -226,8 +226,8 @@ export const svgMotionLogoTriangleDefs: SVGMotionPathProps[] = [
       'L 0.970215 23.756',
       'Z',
     ].join(' '),
-    fill: defaultColorOf('UnityYellow'),
-    stroke: defaultColorOf('UnityYellow'),
+    fill: defaultColorOf('ucYellow'),
+    stroke: defaultColorOf('ucYellow'),
   } as const,
   {
     d: [
@@ -237,8 +237,8 @@ export const svgMotionLogoTriangleDefs: SVGMotionPathProps[] = [
       'H 29.27',
       'Z',
     ].join(' '),
-    fill: defaultColorOf('UnityYellow'),
-    stroke: defaultColorOf('UnityYellow'),
+    fill: defaultColorOf('ucYellow'),
+    stroke: defaultColorOf('ucYellow'),
   } as const,
 ] as const;
 
@@ -252,15 +252,15 @@ export const svgMotionLogoSquareDefs: SVGMotionPathProps[] = [
       'L 46.9145 2.46457',
       'Z',
     ].join(' '),
-    fill: defaultColorOf('UnityPink'),
-    stroke: defaultColorOf('UnityPink'),
+    fill: defaultColorOf('ucPink'),
+    stroke: defaultColorOf('ucPink'),
   } as const,
   {
     d: ['M 71.08 29.416', 'H 57 V 43.496', 'H 71.08', 'V 29.416', 'Z'].join(
       ' ',
     ),
-    fill: defaultColorOf('UnityPink'),
-    stroke: defaultColorOf('UnityPink'),
+    fill: defaultColorOf('ucPink'),
+    stroke: defaultColorOf('ucPink'),
   } as const,
   {
     d: [
@@ -271,8 +271,8 @@ export const svgMotionLogoSquareDefs: SVGMotionPathProps[] = [
       'L 52.0662 51.4746',
       'Z',
     ].join(' '),
-    fill: defaultColorOf('UnityPink'),
-    stroke: defaultColorOf('UnityPink'),
+    fill: defaultColorOf('ucPink'),
+    stroke: defaultColorOf('ucPink'),
   } as const,
   {
     d: [
@@ -283,15 +283,15 @@ export const svgMotionLogoSquareDefs: SVGMotionPathProps[] = [
       'L 18.6084 51.4781',
       'Z',
     ].join(' '),
-    fill: defaultColorOf('UnityPink'),
-    stroke: defaultColorOf('UnityPink'),
+    fill: defaultColorOf('ucPink'),
+    stroke: defaultColorOf('ucPink'),
   } as const,
   {
     d: ['M 14.08 29.556', 'H 0', 'V 43.636', 'H 14.08', 'V 29.556', 'Z'].join(
       ' ',
     ),
-    fill: defaultColorOf('UnityPink'),
-    stroke: defaultColorOf('UnityPink'),
+    fill: defaultColorOf('ucPink'),
+    stroke: defaultColorOf('ucPink'),
   } as const,
   {
     d: [
@@ -302,8 +302,8 @@ export const svgMotionLogoSquareDefs: SVGMotionPathProps[] = [
       'L 23.763 2.47074',
       'Z',
     ].join(' '),
-    fill: defaultColorOf('UnityPink'),
-    stroke: defaultColorOf('UnityPink'),
+    fill: defaultColorOf('ucPink'),
+    stroke: defaultColorOf('ucPink'),
   } as const,
 ] as const;
 
@@ -431,8 +431,8 @@ export const svgMotionTitleTextDefs: SVGMotionPathProps[] = [
       'A 54.642 54.642 0 0 1 0 43.9',
       'Z',
     ].join(' '),
-    fill: defaultColorOf('UnityDarkBlue'),
-    stroke: defaultColorOf('UnityDarkBlue'),
+    fill: defaultColorOf('ucDarkBlue'),
+    stroke: defaultColorOf('ucDarkBlue'),
     vectorEffect: 'non-scaling-stroke',
   } as const,
 ] as const;
