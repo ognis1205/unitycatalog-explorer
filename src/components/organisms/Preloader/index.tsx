@@ -9,7 +9,7 @@
 import { Component as Flex } from '@/components/atoms/Flex';
 import { Component as Stack } from '@/components/atoms/Stack';
 import { Component as PreloaderLogo } from '@/components/molecules/PreloaderLogo';
-import { Component as PreloaderText } from '@/components/molecules/PreloaderText';
+import { Component as PreloaderTitle } from '@/components/molecules/PreloaderTitle';
 
 import type { Props as StackProps } from '@/components/atoms/Stack';
 import type { FC } from 'react';
@@ -37,7 +37,7 @@ export const Component: FC<Props> = (props: Props) => (
       />
     </Flex>
     <Flex width={100} textAlign="center">
-      <PreloaderText
+      <PreloaderTitle
         initial={{
           fillOpacity: 0,
           pathLength: 0,

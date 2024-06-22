@@ -15,18 +15,8 @@ const meta = {
 
 type Story = StoryObj<typeof meta>;
 
-export const TitleCatalogs: Story = {
-  args: { title: 'Catalogs', children: 'Catalogs' },
-  render: (args) => <MainPane {...args} />,
-};
-
-export const TitleFunctions: Story = {
-  args: { title: 'Functions', children: 'Functions' },
-  render: (args) => <MainPane {...args} />,
-};
-
-export const TitleVolumes: Story = {
-  args: { title: 'Volumes', children: 'Volumes' },
+export const Default: Story = {
+  args: { title: 'Default', children: 'Default' },
   render: (args) => <MainPane {...args} />,
 };
 

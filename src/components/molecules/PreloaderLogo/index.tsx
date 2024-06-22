@@ -9,18 +9,18 @@
 import { motion } from 'framer-motion';
 
 import {
-  svgMotionLogoDefs,
-  svgMotionLogoHexagonDefs,
-  svgMotionLogoSquareDefs,
-  svgMotionLogoTriangleDefs,
+  svgMotionDefs,
+  svgMotionHexagonDefs,
+  svgMotionSquareDefs,
+  svgMotionTriangleDefs,
 } from '@/utils/svg/logo';
 
-import type { SVGMotionLogoProps, SVGMotionPathProps } from '@/utils/svg/logo';
+import type { SVGMotionPathProps, SVGMotionSVGProps } from '@/utils/svg';
 import type { FC } from 'react';
 
 export type Props = Omit<
-  SVGMotionLogoProps,
-  keyof Pick<SVGMotionLogoProps, 'xmlns' | 'viewBox' | 'fill' | 'role'>
+  SVGMotionSVGProps,
+  keyof Pick<SVGMotionSVGProps, 'xmlns' | 'viewBox' | 'fill' | 'role'>
 > & {
   strokeWidth: SVGMotionPathProps['strokeWidth'];
   strokeDasharray: SVGMotionPathProps['strokeDasharray'];
@@ -34,8 +34,8 @@ export const Component: FC<Props> = ({
   strokeDasharray,
   ...props
 }: Props) => (
-  <motion.svg {...props} {...svgMotionLogoDefs}>
-    {svgMotionLogoHexagonDefs.map((h, index) => (
+  <motion.svg {...props} {...svgMotionDefs}>
+    {svgMotionHexagonDefs.map((h, index) => (
       <motion.path
         {...h}
         key={index}
@@ -46,7 +46,7 @@ export const Component: FC<Props> = ({
         strokeDasharray={strokeDasharray}
       ></motion.path>
     ))}
-    {svgMotionLogoTriangleDefs.map((t, index) => (
+    {svgMotionTriangleDefs.map((t, index) => (
       <motion.path
         {...t}
         key={index}
@@ -57,7 +57,7 @@ export const Component: FC<Props> = ({
         strokeDasharray={strokeDasharray}
       ></motion.path>
     ))}
-    {svgMotionLogoSquareDefs.map((s, index) => (
+    {svgMotionSquareDefs.map((s, index) => (
       <motion.path
         {...s}
         key={index}

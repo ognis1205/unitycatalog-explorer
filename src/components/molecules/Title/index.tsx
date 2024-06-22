@@ -1,5 +1,5 @@
 /**
- * @fileoverview Defines Logo molucule.
+ * @fileoverview Defines Title molucule.
  * @author Shingo OKAWA <shingo.okawa.g.h.c@gmail.com>
  * @copyright Copyright (C) 2024 Shingo OKAWA and a number of other contributors
  * @license Apache-2.0
@@ -7,12 +7,7 @@
 'use client';
 
 import { defaultColorOf } from '@/styles/chakra/theme';
-import {
-  svgDefs,
-  svgHexagonDefs,
-  svgSquareDefs,
-  svgTriangleDefs,
-} from '@/utils/svg/logo';
+import { svgDefs, svgTextDefs } from '@/utils/svg/title';
 
 import type { SVGSVGProps } from '@/utils/svg';
 import type { FC } from 'react';
@@ -30,20 +25,14 @@ export const Component: FC<Props> = ({
   color = 'default',
   ...props
 }: Props) => {
-  let hColor = defaultColorOf('ucDarkBlue');
-  let tColor = defaultColorOf('ucYellow');
-  let sColor = defaultColorOf('ucPink');
+  let tColor = defaultColorOf('ucDarkBlue');
 
   switch (color) {
     case 'black':
-      hColor = 'black';
       tColor = 'black';
-      sColor = 'black';
       break;
     case 'white':
-      hColor = 'white';
       tColor = 'white';
-      sColor = 'white';
       break;
     default:
       break;
@@ -51,17 +40,11 @@ export const Component: FC<Props> = ({
 
   return (
     <svg {...props} {...svgDefs}>
-      {svgHexagonDefs.map((h, index) => (
-        <path {...h} key={index} fill={hColor}></path>
-      ))}
-      {svgTriangleDefs.map((t, index) => (
+      {svgTextDefs.map((t, index) => (
         <path {...t} key={index} fill={tColor}></path>
-      ))}
-      {svgSquareDefs.map((s, index) => (
-        <path {...s} key={index} fill={sColor}></path>
       ))}
     </svg>
   );
 };
 
-Component.displayName = 'Logo';
+Component.displayName = 'Title';

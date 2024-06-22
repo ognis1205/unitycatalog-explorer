@@ -1,19 +1,19 @@
 /**
- * @fileoverview Defines @/components/molecules/PreloaderLogo story.
+ * @fileoverview Defines @/components/molecules/PreloaderTitle story.
  * @author Shingo OKAWA <shingo.okawa.g.h.c@gmail.com>
  * @copyright Copyright (C) 2024 Shingo OKAWA and a number of other contributors
  * @license Apache-2.0
  */
 import { Component as Box } from '@/components/atoms/Box';
 import { Component as Flex } from '@/components/atoms/Flex';
-import { Component as PreloaderLogo } from '@/components/molecules/PreloaderLogo';
+import { Component as PreloaderTitle } from '@/components/molecules/PreloaderTitle';
 
 import type { Meta, StoryObj } from '@storybook/react';
 
 const meta = {
-  title: 'PreloaderLogo',
-  component: PreloaderLogo,
-} satisfies Meta<typeof PreloaderLogo>;
+  title: 'PreloaderTitle',
+  component: PreloaderTitle,
+} satisfies Meta<typeof PreloaderTitle>;
 
 type Story = StoryObj<typeof meta>;
 
@@ -37,7 +37,7 @@ export const Default: Story = {
   render: (args) => (
     <Flex direction="row">
       <Box boxSize="150">
-        <PreloaderLogo {...args} />
+        <PreloaderTitle {...args} />
       </Box>
     </Flex>
   ),
@@ -59,19 +59,19 @@ export const Durations: Story = {
   render: (args) => (
     <Flex direction="row">
       <Box boxSize="150">
-        <PreloaderLogo
+        <PreloaderTitle
           {...args}
           transition={{ duration: 0.5, ease: 'easeInOut' }}
         />
       </Box>
       <Box boxSize="150">
-        <PreloaderLogo
+        <PreloaderTitle
           {...args}
           transition={{ duration: 1.0, ease: 'easeInOut' }}
         />
       </Box>
       <Box boxSize="150">
-        <PreloaderLogo
+        <PreloaderTitle
           {...args}
           transition={{ duration: 1.5, ease: 'easeInOut' }}
         />

@@ -1,5 +1,5 @@
 /**
- * @fileoverview Defines PreloaderText molucule.
+ * @fileoverview Defines PreloaderTitle molucule.
  * @author Shingo OKAWA <shingo.okawa.g.h.c@gmail.com>
  * @copyright Copyright (C) 2024 Shingo OKAWA and a number of other contributors
  * @license Apache-2.0
@@ -8,14 +8,14 @@
 
 import { motion } from 'framer-motion';
 
-import { svgMotionTitleDefs, svgMotionTitleTextDefs } from '@/utils/svg/logo';
+import { svgMotionDefs, svgMotionTextDefs } from '@/utils/svg/title';
 
-import type { SVGMotionLogoProps, SVGMotionPathProps } from '@/utils/svg/logo';
+import type { SVGMotionPathProps, SVGMotionSVGProps } from '@/utils/svg';
 import type { FC } from 'react';
 
 export type Props = Omit<
-  SVGMotionLogoProps,
-  keyof Pick<SVGMotionLogoProps, 'xmlns' | 'viewBox' | 'fill' | 'role'>
+  SVGMotionSVGProps,
+  keyof Pick<SVGMotionSVGProps, 'xmlns' | 'viewBox' | 'fill' | 'role'>
 > & {
   strokeWidth: SVGMotionPathProps['strokeWidth'];
   strokeDasharray: SVGMotionPathProps['strokeDasharray'];
@@ -29,8 +29,8 @@ export const Component: FC<Props> = ({
   strokeDasharray,
   ...props
 }: Props) => (
-  <motion.svg {...props} {...svgMotionTitleDefs}>
-    {svgMotionTitleTextDefs.map((t, index) => (
+  <motion.svg {...props} {...svgMotionDefs}>
+    {svgMotionTextDefs.map((t, index) => (
       <motion.path
         {...t}
         key={index}
@@ -44,4 +44,4 @@ export const Component: FC<Props> = ({
   </motion.svg>
 );
 
-Component.displayName = 'PreloaderText';
+Component.displayName = 'PreloaderTitle';
