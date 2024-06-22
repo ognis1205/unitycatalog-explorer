@@ -1,6 +1,6 @@
 'use client';
 
-import { Component as Preloader } from '@/components/organisms/Preloader';
+import { Component as Preloader } from '@/components/molecules/Preloader';
 
 import styles from './page.module.css';
 
