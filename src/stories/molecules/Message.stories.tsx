@@ -28,4 +28,17 @@ export const BackToHome: Story = {
   ),
 };
 
+export const WorkInProgress: Story = {
+  args: {
+    title: 'Pardon my dust',
+    message:
+      'This page is currently WIP and is planned to deliver in the near future.',
+  },
+  render: (args) => (
+    <Message {...args}>
+      <Route href="/">Back to home</Route>
+    </Message>
+  ),
+};
+
 export default meta;
