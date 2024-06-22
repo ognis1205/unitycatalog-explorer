@@ -4,6 +4,7 @@
  * @copyright Copyright (C) 2024 Shingo OKAWA and a number of other contributors
  * @license Apache-2.0
  */
+import { Component as Flex } from '@/components/atoms/Flex';
 import { Component as Link } from '@/components/atoms/Link';
 
 import type { Meta, StoryObj } from '@storybook/react';
@@ -15,30 +16,37 @@ const meta = {
 
 type Story = StoryObj<typeof meta>;
 
-export const InternalLinkDefault: Story = {
-  args: {
-    href: '/',
-  },
-  render: (args) => <Link {...args}>Link</Link>,
-};
-
-export const InternalLinkAsNavigation: Story = {
+export const Default: Story = {
   args: {
     href: '/',
   },
   render: (args) => (
-    <Link {...args} variant="nav">
-      Link
-    </Link>
+    <Flex direction="row">
+      <Link {...args}>Default</Link>
+    </Flex>
   ),
 };
 
-export const ExternalLink: Story = {
+export const Variants: Story = {
   args: {
     href: '/',
-    isExternal: true,
   },
-  render: (args) => <Link {...args}>Link</Link>,
+  render: (args) => (
+    <Flex direction="row">
+      <Link {...args} variant="main">
+        Main
+      </Link>
+      <Link {...args} colorScheme="teal" variant="main">
+        Main
+      </Link>
+      <Link {...args} variant="menu">
+        Menu
+      </Link>
+      <Link {...args} colorScheme="teal" variant="menu">
+        Menu
+      </Link>
+    </Flex>
+  ),
 };
 
 export default meta;

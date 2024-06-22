@@ -18,7 +18,11 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {},
-  render: (args) => <Button {...args}>Default</Button>,
+  render: (args) => (
+    <Flex direction="row">
+      <Button {...args}>Default</Button>
+    </Flex>
+  ),
 };
 
 export const ColorSchemes: Story = {

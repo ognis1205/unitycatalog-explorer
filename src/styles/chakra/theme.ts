@@ -7,10 +7,12 @@
 import { extendTheme } from '@chakra-ui/react';
 import { Inter, Rubik } from 'next/font/google';
 
-import { style as buttonStyle } from '@/utils/chakra/styles/Button';
+import { config as buttonConfig } from '@/styles/chakra/variants/Button';
+import { config as linkConfig } from '@/styles/chakra/variants/Link';
 
 const customComponents = {
-  Button: buttonStyle,
+  Button: buttonConfig,
+  Link: linkConfig,
 };
 
 const customColors = {

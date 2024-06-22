@@ -1,5 +1,5 @@
 /**
- * @fileoverview Defines Chakra UI custom Button styles.
+ * @fileoverview Defines Chakra UI custom Button variants.
  * @author Shingo OKAWA <shingo.okawa.g.h.c@gmail.com>
  * @copyright Copyright (C) 2024 Shingo OKAWA and a number of other contributors
  * @license Apache-2.0
@@ -45,7 +45,7 @@ const menu = defineStyle((props) => {
   };
 });
 
-export const style = defineStyleConfig({
+export const config = defineStyleConfig({
   variants: {
     main,
     menu,

@@ -4,6 +4,8 @@
  * @copyright Copyright (C) 2024 Shingo OKAWA and a number of other contributors
  * @license Apache-2.0
  */
+import { Component as Box } from '@/components/atoms/Box';
+import { Component as Flex } from '@/components/atoms/Flex';
 import { Component as Logo } from '@/components/molecules/Logo';
 
 import type { Meta, StoryObj } from '@storybook/react';
@@ -15,23 +17,32 @@ const meta = {
 
 type Story = StoryObj<typeof meta>;
 
-export const ColorDefault: Story = {
+export const Default: Story = {
   args: {},
-  render: (args) => <Logo {...args} />,
+  render: (args) => (
+    <Flex direction="row">
+      <Box boxSize="150">
+        <Logo {...args} />
+      </Box>
+    </Flex>
+  ),
 };
 
-export const ColorBlack: Story = {
-  args: {
-    color: 'black',
-  },
-  render: (args) => <Logo {...args} />,
-};
-
-export const ColorWhite: Story = {
-  args: {
-    color: 'white',
-  },
-  render: (args) => <Logo {...args} />,
+export const Colors: Story = {
+  args: {},
+  render: (args) => (
+    <Flex direction="row">
+      <Box boxSize="150">
+        <Logo {...args} />
+      </Box>
+      <Box boxSize="150">
+        <Logo {...args} color="black" />
+      </Box>
+      <Box boxSize="150">
+        <Logo {...args} color="white" />
+      </Box>
+    </Flex>
+  ),
 };
 
 export default meta;

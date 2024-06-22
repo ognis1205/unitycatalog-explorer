@@ -4,7 +4,8 @@
  * @copyright Copyright (C) 2024 Shingo OKAWA and a number of other contributors
  * @license Apache-2.0
  */
-import { defaultColorOf } from '@/utils/chakra/theme';
+
+import { defaultColorOf } from '@/styles/chakra/theme';
 
 import type { SVGMotionProps } from 'framer-motion';
 import type { SVGAttributes } from 'react';

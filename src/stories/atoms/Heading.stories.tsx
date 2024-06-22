@@ -18,7 +18,11 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {},
-  render: (args) => <Heading {...args}>Default</Heading>,
+  render: (args) => (
+    <Flex direction="row">
+      <Heading {...args}>Default</Heading>
+    </Flex>
+  ),
 };
 
 export const Sizes: Story = {

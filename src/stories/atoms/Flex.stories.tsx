@@ -19,7 +19,9 @@ export const Default: Story = {
   args: {},
   render: (args) => (
     <Flex direction="row">
-      <Flex {...args}>Default</Flex>
+      <Flex {...args}>
+        <div>Default</div>
+      </Flex>
     </Flex>
   ),
 };

@@ -6,7 +6,7 @@
  */
 'use client';
 
-import { defaultColorOf } from '@/utils/chakra/theme';
+import { defaultColorOf } from '@/styles/chakra/theme';
 import {
   svgLogoDefs,
   svgLogoHexagonDefs,

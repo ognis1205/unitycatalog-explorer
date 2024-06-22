@@ -6,10 +6,11 @@
  */
 
 import { Providers } from '@/app/providers';
-import { fonts } from '@/utils/chakra/theme';
+import { fonts } from '@/styles/chakra/theme';
 
 import type { Metadata } from 'next';
 import type { FC, ReactNode } from 'react';
+
 import './globals.css';
 
 export const metadata: Metadata = {
