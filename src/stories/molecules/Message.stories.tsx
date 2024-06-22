@@ -4,8 +4,7 @@
  * @copyright Copyright (C) 2024 Shingo OKAWA and a number of other contributors
  * @license Apache-2.0
  */
-//import { Component as LinkButton } from '@/atoms/LinkButton';
-//import { Component as LoginButton } from '@/atoms/LoginButton';
+import { Component as Route } from '@/components/atoms/Route';
 import { Component as Message } from '@/components/molecules/Message';
 
 import type { Meta, StoryObj } from '@storybook/react';
@@ -24,7 +23,7 @@ export const BackToHome: Story = {
   },
   render: (args) => (
     <Message {...args}>
-      {/*<LinkButton href={'/'}>*/}Back to home{/*</LinkButton>*/}
+      <Route href="/">Back to home</Route>
     </Message>
   ),
 };
