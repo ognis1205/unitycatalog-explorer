@@ -45,10 +45,24 @@ const route = defineStyle((props) => {
   };
 });
 
+const tab = defineStyle((props) => {
+  const { colorScheme } = props;
+
+  return {
+    color: `${colorScheme}.700`,
+    textDecoration: 'none',
+    _hover: {
+      color: `${colorScheme}.900`,
+      textDecoration: 'none',
+    },
+  };
+});
+
 export const config = defineStyleConfig({
   variants: {
     main,
     menu,
     route,
+    tab,
   },
 });

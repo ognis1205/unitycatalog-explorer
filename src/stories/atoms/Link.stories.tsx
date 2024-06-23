@@ -51,6 +51,12 @@ export const Variants: Story = {
       <Link {...args} colorScheme="teal" variant="route">
         Route
       </Link>
+      <Link {...args} variant="tab">
+        Tab
+      </Link>
+      <Link {...args} colorScheme="teal" variant="tab">
+        Tab
+      </Link>
     </Flex>
   ),
 };
