@@ -10,9 +10,17 @@ lint:
 fix:
     @npm run fix
 
-# Installs the package.
+# Runs storybook.
+story:
+    @npm run storybook
+
+# Installs the required packages.
 install:
     @npm install
+
+# Builds the package.
+build:
+    @npm run build
 
 # Cleans up the pre-build target.
 clean:

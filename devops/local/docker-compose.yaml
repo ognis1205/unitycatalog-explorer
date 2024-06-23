@@ -2,8 +2,7 @@ version: '3.9'
 services:
   mock:
     image: stoplight/prism:5.8.1
-    command: 
-      mock -h 0.0.0.0 /tmp/api.yaml
+    command: mock -h 0.0.0.0 /tmp/api.yaml
     volumes:
       - ./api.yaml:/tmp/api.yaml
     ports:
