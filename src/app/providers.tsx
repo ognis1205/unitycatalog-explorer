@@ -13,7 +13,6 @@ import { theme } from '@/style/chakra/theme';
 
 import type { FC } from 'react';
 
-
 export type Props = {
   children: React.ReactNode;
 };

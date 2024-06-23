@@ -14,7 +14,6 @@ import type {
   SVGSVGProps,
 } from '@/utils/svg';
 
-
 export const svgDefs: SVGSVGProps = {
   xmlns: 'http://www.w3.org/2000/svg',
   viewBox: '0 0 120.114 72.001',

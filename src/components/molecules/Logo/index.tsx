@@ -17,7 +17,6 @@ import {
 import type { SVGSVGProps } from '@/utils/svg';
 import type { FC } from 'react';
 
-
 export type Color = 'default' | 'black' | 'white';
 
 export type Props = Omit<

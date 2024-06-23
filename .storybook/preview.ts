@@ -4,7 +4,7 @@
  * @copyright Copyright (C) 2024 Shingo OKAWA and a number of other contributors
  * @license Apache-2.0
  */
-import { theme } from '@/styles/chakra/theme';
+import { theme } from '@/style/chakra/theme';
 import type { Preview } from '@storybook/react';
 
 const preview: Preview = {
