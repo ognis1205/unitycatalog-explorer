@@ -4,6 +4,7 @@
  * @copyright Copyright (C) 2024 Shingo OKAWA and a number of other contributors
  * @license Apache-2.0
  */
+import { Component as Flex } from '@/components/atoms/Flex';
 import { Component as Preloader } from '@/components/molecules/Preloader';
 
 import type { Meta, StoryObj } from '@storybook/react';
@@ -17,7 +18,11 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {},
-  render: (args) => <Preloader {...args} />,
+  render: (args) => (
+    <Flex direction="row">
+      <Preloader {...args} />
+    </Flex>
+  ),
 };
 
 export default meta;
