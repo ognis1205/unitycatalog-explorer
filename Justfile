@@ -10,7 +10,7 @@ lint:
 fix:
     @npm run fix
 
-# Runs storybook.
+# Runs Storybook.
 story:
     @npm run storybook
 
@@ -26,6 +26,10 @@ build:
 clean:
     @rm -rf node_modules
 
-# Runs local docker emvironment
+# Starts the development server.
+start:
+    @npm start
+
+# Runs the local docker environment.
 mock:
     @docker compose -f devops/local/docker-compose.yaml up -d
