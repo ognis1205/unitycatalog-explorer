@@ -4,8 +4,8 @@
  * @copyright Copyright (C) 2024 Shingo OKAWA and a number of other contributors
  * @license Apache-2.0
  */
-import { Component as Icon } from '@/components/atoms/Icon';
 import { Component as Flex } from '@/components/atoms/Flex';
+import { Component as Icon } from '@/components/atoms/Icon';
 
 import type { Meta, StoryObj } from '@storybook/react';
 
@@ -17,16 +17,18 @@ const meta = {
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-  args: {},
+  args: {
+    iconName: 'home',
+  },
   render: (args) => (
     <Flex direction="row">
-      <Icon iconName="home" />
-      <Icon iconName="info" />
-      <Icon iconName="catalog" />
-      <Icon iconName="schema" />
-      <Icon iconName="table" />
-      <Icon iconName="plus" />
-      <Icon iconName="question" />
+      <Icon {...args} iconName="home" />
+      <Icon {...args} iconName="info" />
+      <Icon {...args} iconName="catalog" />
+      <Icon {...args} iconName="schema" />
+      <Icon {...args} iconName="table" />
+      <Icon {...args} iconName="plus" />
+      <Icon {...args} iconName="question" />
     </Flex>
   ),
 };
@@ -43,6 +45,5 @@ export const Sizes: Story = {
     </Flex>
   ),
 };
-
 
 export default meta;

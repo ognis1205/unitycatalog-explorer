@@ -1,5 +1,5 @@
 /**
- * @fileoverview Defines AbsoluteCenter atom (re-exportation for backward compatibility.).
+ * @fileoverview Defines AbsoluteCenter atom (re-exportation for backward compatibility).
  * @see {@link https://github.com/chakra-ui/chakra-ui/discussions/3435|GitHub}
  * @see {@link https://v2.chakra-ui.com/docs/styled-system/chakra-factory|ChakraUI}
  * @see {@link https://zenn.dev/t_keshi/scraps/2322ed9224457a|Zenn(Japanese)}
