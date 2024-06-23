@@ -12,6 +12,7 @@
 import { Image } from '@chakra-ui/react';
 
 import type { ImageProps } from '@chakra-ui/react';
+import type { FC } from 'react';
 
 export type Props = Omit<ImageProps, keyof Pick<ImageProps, 'objectFit'>> & {
   alt: string;
