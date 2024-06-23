@@ -5,7 +5,7 @@
  * @license Apache-2.0
  */
 
-import { defaultColorOf } from '@/styles/chakra/theme';
+import { defaultColorOf } from '@/style/chakra/theme';
 
 import type {
   SVGMotionPathProps,
@@ -13,6 +13,7 @@ import type {
   SVGPathProps,
   SVGSVGProps,
 } from '@/utils/svg';
+
 
 export const svgDefs: SVGSVGProps = {
   xmlns: 'http://www.w3.org/2000/svg',

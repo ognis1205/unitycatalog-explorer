@@ -6,7 +6,7 @@
  */
 'use client';
 
-import { defaultColorOf } from '@/styles/chakra/theme';
+import { defaultColorOf } from '@/style/chakra/theme';
 import {
   svgDefs,
   svgHexagonDefs,
@@ -16,6 +16,7 @@ import {
 
 import type { SVGSVGProps } from '@/utils/svg';
 import type { FC } from 'react';
+
 
 export type Color = 'default' | 'black' | 'white';
 

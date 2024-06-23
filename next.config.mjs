@@ -5,6 +5,15 @@
  * @copyright Copyright (C) 2024 Shingo OKAWA and a number of other contributors
  * @license Apache-2.0
  */
-const nextConfig = {};
+const nextConfig = {
+  async rewrites() {
+    return [
+      {
+        source: '/',
+        destination: '/catalogs',
+      }
+    ];
+  },
+};
 
 export default nextConfig;

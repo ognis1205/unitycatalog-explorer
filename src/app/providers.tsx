@@ -9,9 +9,10 @@
 import { CacheProvider } from '@chakra-ui/next-js';
 import { ChakraProvider } from '@chakra-ui/react';
 
-import { theme } from '@/styles/chakra/theme';
+import { theme } from '@/style/chakra/theme';
 
 import type { FC } from 'react';
+
 
 export type Props = {
   children: React.ReactNode;

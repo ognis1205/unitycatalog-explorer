@@ -6,10 +6,11 @@
  */
 
 import { Providers } from '@/app/providers';
-import { fonts } from '@/styles/chakra/theme';
+import { fonts } from '@/style/chakra/theme';
 
 import type { Metadata } from 'next';
 import type { FC, ReactNode } from 'react';
+
 
 export const metadata: Metadata = {
   title: 'Unity Catalog Explorer',
