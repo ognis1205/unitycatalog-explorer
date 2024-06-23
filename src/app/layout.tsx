@@ -11,8 +11,6 @@ import { fonts } from '@/styles/chakra/theme';
 import type { Metadata } from 'next';
 import type { FC, ReactNode } from 'react';
 
-import './globals.css';
-
 export const metadata: Metadata = {
   title: 'Unity Catalog Explorer',
   description: 'Open, Multi-modal Catalog for Data & AI',
