@@ -58,11 +58,23 @@ const tab = defineStyle((props) => {
   };
 });
 
+const title = defineStyle((props) => {
+  const { colorScheme } = props;
+
+  return {
+    textDecoration: 'none',
+    _hover: {
+      textDecoration: 'none',
+    },
+  };
+});
+
 export const config = defineStyleConfig({
   variants: {
     main,
     menu,
     route,
     tab,
+    title,
   },
 });
