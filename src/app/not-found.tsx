@@ -9,8 +9,8 @@
 import { Component as Container } from '@/components/atoms/Container';
 import { Component as Flex } from '@/components/atoms/Flex';
 import { Component as Route } from '@/components/atoms/Route';
-import { Component as Illustration } from '@/components/molecules/Illustration';
-import { Component as Message } from '@/components/molecules/Message';
+import { Component as GoToArtwork } from '@/components/molecules/GoToArtwork';
+import { Component as GoToMessage } from '@/components/molecules/GoToMessage';
 import { Component as MainPane } from '@/components/organisms/MainPane';
 
 import type { NextPage } from 'next';
@@ -24,7 +24,7 @@ const Page: NextPage<Record<string, never>> = () => (
         h="100vh"
         w={{ base: '0%', md: '60%' }}
       >
-        <Illustration
+        <GoToArtwork
           src="/images/illustration-page-not-found.svg"
           alt="Not found"
           display={{ base: 'none', md: 'flex' }}
@@ -36,13 +36,13 @@ const Page: NextPage<Record<string, never>> = () => (
         h="100vh"
         w={{ base: '100%', md: '40%' }}
       >
-        <Message
+        <GoToMessage
           as={Container}
           title="Oops! Something went wrong"
           message={"This page didn't load Unity Catalog Explorer correctly."}
         >
           <Route href="/">Back to home</Route>
-        </Message>
+        </GoToMessage>
       </Flex>
     </Flex>
   </MainPane>
