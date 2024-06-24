@@ -44,6 +44,7 @@ export const Icons: Story = {
       <TabItem {...args} iconName="table" name="Table" />
       <TabItem {...args} iconName="plus" name="Plus" />
       <TabItem {...args} iconName="question" name="Question" />
+      <TabItem {...args} iconName="popover" name="Popover" />
     </Flex>
   ),
 };

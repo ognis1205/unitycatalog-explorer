@@ -8,6 +8,7 @@ import { createElement } from 'react';
 import {
   PiBookBold,
   PiDatabaseBold,
+  PiDotsThreeBold,
   PiHouseBold,
   PiInfoBold,
   PiPlusBold,
@@ -23,6 +24,7 @@ const icons = {
   table: PiTableBold,
   plus: PiPlusBold,
   question: PiQuestionBold,
+  popover: PiDotsThreeBold,
 };
 
 export type IconName = keyof typeof icons;
