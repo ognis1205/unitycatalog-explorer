@@ -20,7 +20,7 @@ const Page: NextPage<Record<string, never>> = () => (
       title="Oops! Something went wrong"
       message="This page didn't load Unity Catalog Explorer correctly."
     >
-      <Route href="/">Back to home</Route>
+      <Route href="/dashboard/catalogs">Back to home</Route>
     </Nav>
   </PaneMain>
 );

@@ -6,11 +6,11 @@
  * @license Apache-2.0
  */
 const nextConfig = {
-  async rewrites() {
+  rewrites: async () => {
     return [
       {
         source: '/',
-        destination: '/catalogs',
+        destination: '/dashboard/catalogs',
       }
     ];
   },
