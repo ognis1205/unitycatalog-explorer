@@ -58,15 +58,11 @@ const tab = defineStyle((props) => {
   };
 });
 
-const title = defineStyle((props) => {
-  const { colorScheme } = props;
-
-  return {
+const title = defineStyle({
+  textDecoration: 'none',
+  _hover: {
     textDecoration: 'none',
-    _hover: {
-      textDecoration: 'none',
-    },
-  };
+  },
 });
 
 export const config = defineStyleConfig({
