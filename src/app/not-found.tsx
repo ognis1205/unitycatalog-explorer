@@ -7,21 +7,21 @@
 'use client';
 
 import { Component as Route } from '@/components/atoms/Route';
-import { Component as PageTransition } from '@/components/molecules/PageTransition';
+import { Component as Nav } from '@/components/molecules/Nav';
 import { Component as PaneMain } from '@/components/organisms/PaneMain';
 
 import type { NextPage } from 'next';
 
 const Page: NextPage<Record<string, never>> = () => (
   <PaneMain title="Not Found">
-    <PageTransition
+    <Nav
       src="/images/illustration-page-not-found.svg"
       alt="Not Found"
       title="Oops! Something went wrong"
       message="This page didn't load Unity Catalog Explorer correctly."
     >
       <Route href="/">Back to home</Route>
-    </PageTransition>
+    </Nav>
   </PaneMain>
 );
 
