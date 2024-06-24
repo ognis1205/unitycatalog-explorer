@@ -8,12 +8,13 @@
 
 import { Component as Route } from '@/components/atoms/Route';
 import { Component as PageTransition } from '@/components/molecules/PageTransition';
-import { Component as MainPane } from '@/components/organisms/MainPane';
+import { Component as PaneMain } from '@/components/organisms/PaneMain';
 
 import type { NextPage } from 'next';
 
+
 const Page: NextPage<Record<string, never>> = () => (
-  <MainPane title="Not Found">
+  <PaneMain title="Not Found">
     <PageTransition
       src="/images/illustration-page-not-found.svg"
       alt="Not Found"
@@ -22,7 +23,7 @@ const Page: NextPage<Record<string, never>> = () => (
     >
       <Route href="/">Back to home</Route>
     </PageTransition>
-  </MainPane>
+  </PaneMain>
 );
 
 Page.displayName = 'NotFoundPage';
