@@ -1,19 +1,19 @@
 /**
- * @fileoverview Defines @/components/molecules/Title story.
+ * @fileoverview Defines @/components/molecules/SVGTitle story.
  * @author Shingo OKAWA <shingo.okawa.g.h.c@gmail.com>
  * @copyright Copyright (C) 2024 Shingo OKAWA and a number of other contributors
  * @license Apache-2.0
  */
 import { Component as Box } from '@/components/atoms/Box';
 import { Component as Flex } from '@/components/atoms/Flex';
-import { Component as Title } from '@/components/molecules/Title';
+import { Component as SVGTitle } from '@/components/molecules/SVGTitle';
 
 import type { Meta, StoryObj } from '@storybook/react';
 
 const meta = {
-  title: 'Title',
-  component: Title,
-} satisfies Meta<typeof Title>;
+  title: 'SVGTitle',
+  component: SVGTitle,
+} satisfies Meta<typeof SVGTitle>;
 
 type Story = StoryObj<typeof meta>;
 
@@ -22,7 +22,7 @@ export const Default: Story = {
   render: (args) => (
     <Flex direction="row">
       <Box boxSize="150">
-        <Title {...args} />
+        <SVGTitle {...args} />
       </Box>
     </Flex>
   ),
@@ -33,13 +33,13 @@ export const Colors: Story = {
   render: (args) => (
     <Flex direction="row">
       <Box boxSize="150">
-        <Title {...args} />
+        <SVGTitle {...args} />
       </Box>
       <Box boxSize="150">
-        <Title {...args} color="black" />
+        <SVGTitle {...args} color="black" />
       </Box>
       <Box boxSize="150">
-        <Title {...args} color="white" />
+        <SVGTitle {...args} color="white" />
       </Box>
     </Flex>
   ),

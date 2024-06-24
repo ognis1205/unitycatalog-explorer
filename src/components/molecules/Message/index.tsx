@@ -10,7 +10,7 @@ import { Component as Box } from '@/components/atoms/Box';
 import { Component as Heading } from '@/components/atoms/Heading';
 import { Component as Stack } from '@/components/atoms/Stack';
 import { Component as Text } from '@/components/atoms/Text';
-import { Component as Logo } from '@/components/molecules/Logo';
+import { Component as SVGLogo } from '@/components/molecules/SVGLogo';
 
 import type { Props as StackProps } from '@/components/atoms/Stack';
 import type { FC } from 'react';
@@ -31,7 +31,7 @@ export const Component: FC<Props> = ({
 }: Props) => (
   <Stack align="center" textAlign="center" {...props}>
     <Box boxSize={150}>
-      <Logo />
+      <SVGLogo />
     </Box>
     <Stack spacing={2}>
       <Heading size="lg">{title}</Heading>

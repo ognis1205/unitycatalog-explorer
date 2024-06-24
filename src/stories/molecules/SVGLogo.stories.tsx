@@ -1,19 +1,19 @@
 /**
- * @fileoverview Defines @/components/molecules/Logo story.
+ * @fileoverview Defines @/components/molecules/SVGLogo story.
  * @author Shingo OKAWA <shingo.okawa.g.h.c@gmail.com>
  * @copyright Copyright (C) 2024 Shingo OKAWA and a number of other contributors
  * @license Apache-2.0
  */
 import { Component as Box } from '@/components/atoms/Box';
 import { Component as Flex } from '@/components/atoms/Flex';
-import { Component as Logo } from '@/components/molecules/Logo';
+import { Component as SVGLogo } from '@/components/molecules/SVGLogo';
 
 import type { Meta, StoryObj } from '@storybook/react';
 
 const meta = {
-  title: 'Logo',
-  component: Logo,
-} satisfies Meta<typeof Logo>;
+  title: 'SVGLogo',
+  component: SVGLogo,
+} satisfies Meta<typeof SVGLogo>;
 
 type Story = StoryObj<typeof meta>;
 
@@ -22,7 +22,7 @@ export const Default: Story = {
   render: (args) => (
     <Flex direction="row">
       <Box boxSize="150">
-        <Logo {...args} />
+        <SVGLogo {...args} />
       </Box>
     </Flex>
   ),
@@ -33,13 +33,13 @@ export const Colors: Story = {
   render: (args) => (
     <Flex direction="row">
       <Box boxSize="150">
-        <Logo {...args} />
+        <SVGLogo {...args} />
       </Box>
       <Box boxSize="150">
-        <Logo {...args} color="black" />
+        <SVGLogo {...args} color="black" />
       </Box>
       <Box boxSize="150">
-        <Logo {...args} color="white" />
+        <SVGLogo {...args} color="white" />
       </Box>
     </Flex>
   ),
