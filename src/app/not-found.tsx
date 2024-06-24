@@ -12,7 +12,6 @@ import { Component as PaneMain } from '@/components/organisms/PaneMain';
 
 import type { NextPage } from 'next';
 
-
 const Page: NextPage<Record<string, never>> = () => (
   <PaneMain title="Not Found">
     <PageTransition
