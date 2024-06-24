@@ -9,6 +9,8 @@ import {
   PiBookBold,
   PiDatabaseBold,
   PiDotsThreeBold,
+  PiFileCloudBold,
+  PiFunctionBold,
   PiGithubLogoBold,
   PiHouseBold,
   PiInfoBold,
@@ -27,6 +29,8 @@ const icons = {
   question: PiQuestionBold,
   popover: PiDotsThreeBold,
   github: PiGithubLogoBold,
+  function: PiFunctionBold,
+  volume: PiFileCloudBold,
 };
 
 export type IconName = keyof typeof icons;

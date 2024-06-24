@@ -120,6 +120,19 @@ const customColors = {
     900: '#FFFFF0',
     950: '#FFFFEF',
   },
+  dodger: {
+    50: '#EEF7FF',
+    100: '#D9EDFF',
+    200: '#BCE1FF',
+    300: '#8ECEFF',
+    400: '#59B2FF',
+    500: '#459BFF', // default
+    600: '#1B71F5',
+    700: '#145BE1',
+    800: '#1749B6',
+    900: '#19418F',
+    950: '#142957',
+  },
 };
 
 export type ThemeColor = keyof typeof customColors;
@@ -142,6 +155,8 @@ export const defaultColorOf = (color: ThemeColor) => {
       return customColors['bianca']['50'];
     case 'ivory':
       return customColors['ivory']['500'];
+    case 'dodger':
+      return customColors['dodger']['500'];
     default:
       return customColors[color]['500'];
   }

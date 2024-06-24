@@ -18,7 +18,9 @@ const meta = {
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-  args: {},
+  args: {
+    home: '/',
+  },
   render: (args) => (
     <Flex direction="row">
       <NavbarTitle {...args} />
@@ -27,7 +29,9 @@ export const Default: Story = {
 };
 
 export const Colors: Story = {
-  args: {},
+  args: {
+    home: '/',
+  },
   render: (args) => (
     <Flex direction="column">
       <NavbarTitle {...args} color={defaultColorOf('ucPink')} />

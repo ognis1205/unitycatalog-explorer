@@ -30,6 +30,8 @@ export const Default: Story = {
       <Icon {...args} iconName="plus" />
       <Icon {...args} iconName="question" />
       <Icon {...args} iconName="popover" />
+      <Icon {...args} iconName="function" />
+      <Icon {...args} iconName="volume" />
     </Flex>
   ),
 };

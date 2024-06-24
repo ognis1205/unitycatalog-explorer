@@ -14,14 +14,12 @@ import { Component as Text } from '@/components/atoms/Text';
 import type { Props as TextProps } from '@/components/atoms/Text';
 import type { FC } from 'react';
 
-export type Props = Omit<TextProps, keyof Pick<TextProps, 'fontSize'>>;
+export type Props = Omit<TextProps, keyof Pick<TextProps, 'fontSize'>> & {
+  url: string;
+};
 
-export const Component: FC<Props> = ({ color, ...props }: Props) => (
-  <Link
-    href="https://github.com/ognis1205/unitycatalog-explorer/issues"
-    isExternal
-    variant="tab"
-  >
+export const Component: FC<Props> = ({ url, color, ...props }: Props) => (
+  <Link href={url} isExternal variant="tab">
     <HStack>
       <Icon color={color} iconName="github" boxSize="1.5rem" />
       <Text color={color} {...props} fontSize="1rem">

@@ -18,7 +18,9 @@ const meta = {
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-  args: {},
+  args: {
+    url: 'https://github.com/ognis1205/unitycatalog-explorer/issues',
+  },
   render: (args) => (
     <Flex direction="row">
       <NavbarFeedback {...args} />
@@ -27,7 +29,9 @@ export const Default: Story = {
 };
 
 export const Colors: Story = {
-  args: {},
+  args: {
+    url: 'https://github.com/ognis1205/unitycatalog-explorer/issues',
+  },
   render: (args) => (
     <Flex direction="column">
       <NavbarFeedback {...args} color={defaultColorOf('ucPink')} />

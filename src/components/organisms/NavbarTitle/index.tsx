@@ -14,10 +14,12 @@ import { Component as Text } from '@/components/atoms/Text';
 import type { Props as TextProps } from '@/components/atoms/Text';
 import type { FC } from 'react';
 
-export type Props = Omit<TextProps, keyof Pick<TextProps, 'fontSize'>>;
+export type Props = Omit<TextProps, keyof Pick<TextProps, 'fontSize'>> & {
+  home: string;
+};
 
-export const Component: FC<Props> = (props: Props) => (
-  <Link href="/" variant="title">
+export const Component: FC<Props> = ({ home, ...props }: Props) => (
+  <Link href={home} variant="title">
     <HStack>
       <Image src="/images/logo-color-dark-blue.svg" h="2rem" alt="Title" />
       <Text {...props} fontSize="1.75rem" as="b">
