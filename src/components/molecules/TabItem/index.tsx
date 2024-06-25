@@ -14,6 +14,7 @@ import { Component as Text } from '@/components/atoms/Text';
 import type { Props as IconProps } from '@/components/atoms/Icon';
 import type { Props as StackProps } from '@/components/atoms/Stack';
 import type { FC } from 'react';
+
 export type Props = StackProps & {
   href: string;
   iconName: IconProps['iconName'];
