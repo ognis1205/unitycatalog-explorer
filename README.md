@@ -1,5 +1,5 @@
 <p align="center">
-  <img height="256" width="256" src="/docs/logo.svg">
+  <img height="128" width="128" src="/docs/logo.svg">
 </p>
 
 Unity Catalog Explorer
