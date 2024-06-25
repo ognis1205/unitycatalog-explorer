@@ -58,3 +58,8 @@ components' hierarchy:
 	***Organisms*** can be regarded as identical to ***organisms*** in the original Atomic Design methodology.
 	In other words, they are components that define page layouts, such as a navigation bar, and are not
 	relocatable within the page.
+
+ - Templates / Pages
+
+	***Templates*** and ***pages*** correspond to the [layouts and pages](https://nextjs.org/docs/pages/building-your-application/routing/pages-and-layouts) of Next.js respectively.
+	Hence, we don't prepare any designated directories for the templates' and/or pages' implementations.
