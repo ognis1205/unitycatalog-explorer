@@ -9,7 +9,7 @@ import type { IconName } from '@/utils/icon';
 export {};
 
 declare global {
-  interface ExplorerNode {
+  interface AssetNode {
     name: string;
     iconName: IconName;
     isDirectory?: boolean;
