@@ -42,3 +42,19 @@ but some modifications are required. The following list explains the guide-line 
 components' hierarchy:
 
  - Atoms
+
+	According to the original Atomic Design methodology, ***atoms*** can be interpreted as components provided by
+	Chakra UI. However, here we define the ***atom*** layer as a layer for re-exporting Chakra UI (for backward
+	compatibility) and ensuring compatibility with the Next.js system.
+
+ - Molecules
+
+	***Molecules*** are the definition layer of ***atoms*** (according to the original Atomic Design methodology)
+	specific to the Unity Catalog Explorer. The difference from the ***organisim*** layer is that the components
+	defined here are versatile and relocatable components.
+
+ - Organisms
+
+	***Organisms*** can be regarded as identical to ***organisms*** in the original Atomic Design methodology.
+	In other words, they are components that define page layouts, such as a navigation bar, and are not
+	relocatable within the page.
