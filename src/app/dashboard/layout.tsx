@@ -53,13 +53,14 @@ const Layout: FC<Props> = ({ children }: Props) => {
         py={10}
         px={10}
         maxW="1280px"
+        h="100vh"
         flexDir={{ base: 'column', md: 'row' }}
         spacing={4}
       >
         <PaneNav w={{ base: '100%', md: '256px', xl: '296px' }}>
           Tree View Here!
         </PaneNav>
-        <PaneMain minW={0} flexGrow={1} title="Home" px={5}>
+        <PaneMain title="Dashboard" minW={0} flexGrow={1} px={5}>
           {children}
         </PaneMain>
       </Stack>

@@ -7,12 +7,14 @@
  */
 const nextConfig = {
   rewrites: async () => {
-    return [
-      {
-        source: '/',
-        destination: '/dashboard/catalogs',
-      }
-    ];
+    return {
+      afterFiles: [
+        {
+          source: '/',
+          destination: '/dashboard/catalogs',
+        },
+      ],
+    };
   },
 };
 

@@ -4,7 +4,6 @@
  * @copyright Copyright (C) 2024 Shingo OKAWA and a number of other contributors
  * @license Apache-2.0
  */
-
 import { Providers } from '@/app/providers';
 import { fonts } from '@/style/chakra/theme';
 
