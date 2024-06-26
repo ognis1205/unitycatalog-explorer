@@ -34,6 +34,8 @@ export const Default: Story = {
       <Icon {...args} iconName="volume" />
       <Icon {...args} iconName="open" />
       <Icon {...args} iconName="close" />
+      <Icon {...args} iconName="search" />
+      <Icon {...args} iconName="browser" />
     </Flex>
   ),
 };

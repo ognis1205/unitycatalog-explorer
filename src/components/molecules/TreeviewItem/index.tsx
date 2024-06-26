@@ -1,5 +1,5 @@
 /**
- * @fileoverview Defines TreeviewNode molecule.
+ * @fileoverview Defines TreeviewItem molecule.
  * @author Shingo OKAWA <shingo.okawa.g.h.c@gmail.com>
  * @copyright Copyright (C) 2024 Shingo OKAWA and a number of other contributors
  * @license Apache-2.0
@@ -41,18 +41,18 @@ export const Component: FC<Props> = memo(({ asset, ...props }: Props) => {
         let newChildren = null;
         switch (asset.iconName) {
           case 'catalog':
-            newChildren = Array(...Array(10)).map(() => {
+            newChildren = Array(...Array(10)).map((_, i) => {
               return {
-                name: 'schema',
+                name: `your_schema_${i}`,
                 iconName: 'schema' as IconName,
                 isDirectory: true,
               };
             });
             break;
           case 'schema':
-            newChildren = Array(...Array(10)).map(() => {
+            newChildren = Array(...Array(10)).map((_, i) => {
               return {
-                name: 'table',
+                name: `your_table_${i}`,
                 iconName: 'table' as IconName,
                 isDirectory: false,
               };
@@ -72,7 +72,7 @@ export const Component: FC<Props> = memo(({ asset, ...props }: Props) => {
   const Child = (asset: AssetNode) => <Component {...props} asset={asset} />;
 
   return (
-    <Box my="0.5em">
+    <Box {...props} my="0.5em">
       <HStack gap={0}>
         {asset.isDirectory && (
           <TreeviewChevron ref={chevronRef} onClick={handleClick} />
@@ -86,7 +86,7 @@ export const Component: FC<Props> = memo(({ asset, ...props }: Props) => {
       <TreeviewCollapse
         ref={collapseRef}
         ml="0.5em"
-        pl="0.5em"
+        pl="1em"
         borderLeft="1px"
         borderColor="gray.100"
       >
@@ -96,4 +96,4 @@ export const Component: FC<Props> = memo(({ asset, ...props }: Props) => {
   );
 });
 
-Component.displayName = 'TreeviewNode';
+Component.displayName = 'TreeviewItem';

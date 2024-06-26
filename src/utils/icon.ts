@@ -7,6 +7,7 @@
 import { createElement } from 'react';
 import {
   PiBookBold,
+  PiBrowserBold,
   PiCaretDownBold,
   PiCaretRightBold,
   PiDatabaseBold,
@@ -16,6 +17,7 @@ import {
   PiGithubLogoBold,
   PiHouseBold,
   PiInfoBold,
+  PiMagnifyingGlassBold,
   PiPlusBold,
   PiQuestionBold,
   PiTableBold,
@@ -35,6 +37,8 @@ const icons = {
   volume: PiFileCloudBold,
   open: PiCaretDownBold,
   close: PiCaretRightBold,
+  search: PiMagnifyingGlassBold,
+  browser: PiBrowserBold,
 };
 
 export type IconName = keyof typeof icons;
