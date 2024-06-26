@@ -79,7 +79,7 @@ export const Component: FC<Props> = memo(({ asset, ...props }: Props) => {
         )}
         <Icon
           iconName={asset.iconName}
-          color={asset.isDirectory ? defaultColorOf('dodger') : undefined}
+          color={asset.isDirectory ? defaultColorOf('dodger') : 'gray.500'}
         />
         <Text>{asset.name}</Text>
       </HStack>
@@ -88,7 +88,7 @@ export const Component: FC<Props> = memo(({ asset, ...props }: Props) => {
         ml="0.5em"
         pl="0.5em"
         borderLeft="1px"
-        borderColor="gray.250"
+        borderColor="gray.100"
       >
         {children && children.map(Child)}
       </TreeviewCollapse>
