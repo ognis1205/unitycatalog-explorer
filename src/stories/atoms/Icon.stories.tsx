@@ -32,6 +32,8 @@ export const Default: Story = {
       <Icon {...args} iconName="popover" />
       <Icon {...args} iconName="function" />
       <Icon {...args} iconName="volume" />
+      <Icon {...args} iconName="open" />
+      <Icon {...args} iconName="close" />
     </Flex>
   ),
 };

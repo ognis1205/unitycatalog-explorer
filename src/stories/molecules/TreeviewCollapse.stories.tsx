@@ -18,8 +18,8 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    w: '100',
-    h: '100',
+    w: 100,
+    h: 100,
   },
   render: (args) => (
     <Flex direction="row">

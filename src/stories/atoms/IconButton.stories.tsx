@@ -33,6 +33,8 @@ export const Default: Story = {
       <IconButton {...args} icon={iconOf('popover')} />
       <IconButton {...args} icon={iconOf('function')} />
       <IconButton {...args} icon={iconOf('volume')} />
+      <IconButton {...args} icon={iconOf('open')} />
+      <IconButton {...args} icon={iconOf('close')} />
     </Flex>
   ),
 };
