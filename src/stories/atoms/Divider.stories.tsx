@@ -1,0 +1,28 @@
+/**
+ * @fileoverview Defines @/components/atoms/Divider story.
+ * @author Shingo OKAWA <shingo.okawa.g.h.c@gmail.com>
+ * @copyright Copyright (C) 2024 Shingo OKAWA and a number of other contributors
+ * @license Apache-2.0
+ */
+import { Component as Divider } from '@/components/atoms/Divider';
+import { Component as Flex } from '@/components/atoms/Flex';
+
+import type { Meta, StoryObj } from '@storybook/react';
+
+const meta = {
+  title: 'Divider',
+  component: Divider,
+} satisfies Meta<typeof Divider>;
+
+type Story = StoryObj<typeof meta>;
+
+export const Default: Story = {
+  args: {},
+  render: (args) => (
+    <Flex direction="row">
+      <Divider {...args} />
+    </Flex>
+  ),
+};
+
+export default meta;

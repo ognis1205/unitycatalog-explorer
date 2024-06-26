@@ -73,7 +73,7 @@ export const Component: FC<Props> = memo(({ asset, ...props }: Props) => {
 
   return (
     <Box {...props} my="0.5em">
-      <HStack gap={0}>
+      <HStack gap="0.25em">
         {asset.isDirectory && (
           <TreeviewChevron ref={chevronRef} onClick={handleClick} />
         )}

@@ -8,17 +8,17 @@
 
 import { AnimatePresence, motion } from 'framer-motion';
 
-import { Component as Box } from '@/components/atoms/Box';
+import { Component as Flex } from '@/components/atoms/Flex';
 
-import type { Props as BoxProps } from '@/components/atoms/Box';
+import type { Props as FlexProps } from '@/components/atoms/Flex';
 import type { FC, ReactNode } from 'react';
 
-export type Props = BoxProps & {
+export type Props = FlexProps & {
   children: ReactNode;
 };
 
 export const Component: FC<Props> = ({ children, ...props }: Props) => (
-  <Box {...props}>
+  <Flex {...props}>
     <AnimatePresence mode="wait" initial={true}>
       <motion.div
         initial="hidden"
@@ -30,12 +30,16 @@ export const Component: FC<Props> = ({ children, ...props }: Props) => (
           exit: { opacity: 0, x: -30, y: 0 },
         }}
         transition={{ duration: 0.6, type: 'easeInOut' }}
-        style={{ position: 'relative' }}
+        style={{
+          position: 'relative',
+          display: 'flex',
+          flexDirection: 'column',
+        }}
       >
         {children}
       </motion.div>
     </AnimatePresence>
-  </Box>
+  </Flex>
 );
 
 Component.displayName = 'PaneNav';
