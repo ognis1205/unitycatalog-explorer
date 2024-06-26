@@ -11,12 +11,15 @@ import { forwardRef, memo, useImperativeHandle, useState } from 'react';
 import { Component as Box } from '@/components/atoms/Box';
 
 import type { Props as BoxProps } from '@/components/atoms/Box';
-import type { FC } from 'react';
 
 export type Props = BoxProps;
 
-export const Component: FC<Props> = memo(
-  forwardRef(({ children, ...props }: Props, ref) => {
+export type Toggler = {
+  toggle: () => void;
+};
+
+export const Component = memo(
+  forwardRef<Toggler, Props>(({ children, ...props }: Props, ref) => {
     const [isOpen, setOpen] = useState<boolean>(false);
 
     useImperativeHandle(ref, () => ({

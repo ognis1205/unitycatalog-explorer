@@ -11,12 +11,15 @@ import { forwardRef, memo, useImperativeHandle, useState } from 'react';
 import { Component as Icon } from '@/components/atoms/Icon';
 
 import type { Props as IconProps } from '@/components/atoms/Icon';
-import type { FC } from 'react';
 
-export type Props = IconProps;
+export type Props = Omit<IconProps, keyof Pick<IconProps, 'iconName'>>;
 
-export const Component: FC<Props> = memo(
-  forwardRef((props: Props, ref) => {
+export type Toggler = {
+  toggle: () => void;
+};
+
+export const Component = memo(
+  forwardRef<Toggler, Props>((props: Props, ref) => {
     const [isOpen, setOpen] = useState<boolean>(false);
 
     useImperativeHandle(ref, () => ({
