@@ -7,14 +7,26 @@
 'use client';
 
 import { usePathname } from 'next/navigation';
+import { PiCaretRightBold } from 'react-icons/pi';
 
+import { Component as Breadcrumb } from '@/components/atoms/Breadcrumb';
+import { Component as BreadcrumbItem } from '@/components/atoms/BreadcrumbItem';
+import { Component as BreadcrumbLink } from '@/components/atoms/BreadcrumbLink';
+import { Component as Button } from '@/components/atoms/Button';
 import { Component as Divider } from '@/components/atoms/Divider';
+import { Component as Flex } from '@/components/atoms/Flex';
+import { Component as Icon } from '@/components/atoms/Icon';
+//import { Component as HStack } from '@/components/atoms/HStack';
 import { Component as Stack } from '@/components/atoms/Stack';
+import { Component as Text } from '@/components/atoms/Text';
+import { Component as VStack } from '@/components/atoms/VStack';
+import { Component as Tab } from '@/components/molecules/Tab';
 import { Component as TreeviewBody } from '@/components/molecules/TreeviewBody';
 import { Component as TreeviewHeader } from '@/components/molecules/TreeviewHeader';
 import { Component as Navbar } from '@/components/organisms/Navbar';
 import { Component as PaneMain } from '@/components/organisms/PaneMain';
 import { Component as PaneNav } from '@/components/organisms/PaneNav';
+import { defaultColorOf } from '@/style/chakra/theme';
 
 import type { FC, ReactNode } from 'react';
 
@@ -37,6 +49,19 @@ const navbarItems = [
     href: '/dashboard/volumes',
     iconName: 'volume' as const,
     name: 'Volumes',
+  },
+];
+
+const subNavbarItems = [
+  {
+    href: 'browse',
+    iconName: 'schema' as const,
+    name: 'Browse',
+  },
+  {
+    href: 'detail',
+    iconName: 'search' as const,
+    name: 'Detail',
   },
 ];
 
@@ -125,6 +150,53 @@ const Layout: FC<Props> = ({ children }: Props) => {
           <TreeviewBody assets={treeviewAssets} overflow="scroll" />
         </PaneNav>
         <PaneMain title="Dashboard" minW={0} flexGrow={1} px={5}>
+          <Flex alignItems="center" justifyContent="space-between" mb="0.8em">
+            <Breadcrumb
+              fontWeight="bold"
+              fontSize="1.2em"
+              separator={<PiCaretRightBold color="gray" />}
+            >
+              <BreadcrumbItem>
+                <BreadcrumbLink href="#" color={defaultColorOf('dodger')}>
+                  your_catalog_0
+                </BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbItem>
+                <BreadcrumbLink href="#" color={defaultColorOf('dodger')}>
+                  your_schema_1
+                </BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbItem isCurrentPage>
+                <BreadcrumbLink href="#" color={defaultColorOf('dodger')}>
+                  your_table_2
+                </BreadcrumbLink>
+              </BreadcrumbItem>
+            </Breadcrumb>
+            <Button colorScheme="ucDarkBlue">New Catalog</Button>
+          </Flex>
+          <VStack
+            spacing={0}
+            align="stretch"
+            borderBottom={1}
+            borderStyle="solid"
+            borderColor="gray.200"
+          >
+            <Flex align="center" px="1em" py="0.75em" bg="gray.50">
+              <Icon iconName="browser" color="gray.500" fontSize="1.2em" />
+              <Text as="b" fontSize="1.2em" pl="0.5em">
+                your_catalog_0
+              </Text>
+            </Flex>
+            <Flex
+              px={6}
+              py={0}
+              bg="gray.50"
+              alignItems="center"
+              justifyContent="space-between"
+            >
+              <Tab path="browse" items={subNavbarItems} />
+            </Flex>
+          </VStack>
           {children}
         </PaneMain>
       </Stack>

@@ -24,7 +24,7 @@ export type Props = ButtonProps & {
 export const Component: FC<Props> = ({ title, ...props }: Props) => (
   <VStack align="left">
     <HStack>
-      <Flex align="center">
+      <Flex align="center" mb="1em">
         <Icon iconName="browser" color="gray.500" fontSize="1.2em" />
         <Text as="b" fontSize="1.2em" pl="0.5em">
           {title}
