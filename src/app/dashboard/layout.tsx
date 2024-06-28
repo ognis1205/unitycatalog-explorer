@@ -224,12 +224,8 @@ const Layout: FC<Props> = ({ children }: Props) => {
                       <Text>your_schema_0</Text>
                     </HStack>
                   </Td>
-                  <Td>
-                    22:28:58 Wednesday, June 26, 2024 (GMT+9)
-                  </Td>
-                  <Td>
-                    This is my awesome schema.
-                  </Td>
+                  <Td>22:28:58 Wednesday, June 26, 2024 (GMT+9)</Td>
+                  <Td>This is my awesome schema.</Td>
                 </Tr>
                 <Tr>
                   <Td>
@@ -241,12 +237,8 @@ const Layout: FC<Props> = ({ children }: Props) => {
                       <Text>your_schema_1</Text>
                     </HStack>
                   </Td>
-                  <Td>
-                    22:28:58 Wednesday, June 26, 2024 (GMT+9)
-                  </Td>
-                  <Td>
-                    This is my awesome schema.
-                  </Td>
+                  <Td>22:28:58 Wednesday, June 26, 2024 (GMT+9)</Td>
+                  <Td>This is my awesome schema.</Td>
                 </Tr>
                 <Tr>
                   <Td>
@@ -258,12 +250,8 @@ const Layout: FC<Props> = ({ children }: Props) => {
                       <Text>your_schema_2</Text>
                     </HStack>
                   </Td>
-                  <Td>
-                    22:28:58 Wednesday, June 26, 2024 (GMT+9)
-                  </Td>
-                  <Td>
-                    This is my awesome schema.
-                  </Td>
+                  <Td>22:28:58 Wednesday, June 26, 2024 (GMT+9)</Td>
+                  <Td>This is my awesome schema.</Td>
                 </Tr>
                 <Tr>
                   <Td>
@@ -275,12 +263,8 @@ const Layout: FC<Props> = ({ children }: Props) => {
                       <Text>your_schema_3</Text>
                     </HStack>
                   </Td>
-                  <Td>
-                    22:28:58 Wednesday, June 26, 2024 (GMT+9)
-                  </Td>
-                  <Td>
-                    This is my awesome schema.
-                  </Td>
+                  <Td>22:28:58 Wednesday, June 26, 2024 (GMT+9)</Td>
+                  <Td>This is my awesome schema.</Td>
                 </Tr>
                 <Tr>
                   <Td>
@@ -292,12 +276,8 @@ const Layout: FC<Props> = ({ children }: Props) => {
                       <Text>your_schema_4</Text>
                     </HStack>
                   </Td>
-                  <Td>
-                    22:28:58 Wednesday, June 26, 2024 (GMT+9)
-                  </Td>
-                  <Td>
-                    This is my awesome schema.
-                  </Td>
+                  <Td>22:28:58 Wednesday, June 26, 2024 (GMT+9)</Td>
+                  <Td>This is my awesome schema.</Td>
                 </Tr>
                 <Tr>
                   <Td>
@@ -309,12 +289,8 @@ const Layout: FC<Props> = ({ children }: Props) => {
                       <Text>your_schema_5</Text>
                     </HStack>
                   </Td>
-                  <Td>
-                    22:28:58 Wednesday, June 26, 2024 (GMT+9)
-                  </Td>
-                  <Td>
-                    This is my awesome schema.
-                  </Td>
+                  <Td>22:28:58 Wednesday, June 26, 2024 (GMT+9)</Td>
+                  <Td>This is my awesome schema.</Td>
                 </Tr>
                 <Tr>
                   <Td>
@@ -326,12 +302,8 @@ const Layout: FC<Props> = ({ children }: Props) => {
                       <Text>your_schema_6</Text>
                     </HStack>
                   </Td>
-                  <Td>
-                    22:28:58 Wednesday, June 26, 2024 (GMT+9)
-                  </Td>
-                  <Td>
-                    This is my awesome schema.
-                  </Td>
+                  <Td>22:28:58 Wednesday, June 26, 2024 (GMT+9)</Td>
+                  <Td>This is my awesome schema.</Td>
                 </Tr>
                 <Tr>
                   <Td>
@@ -343,12 +315,8 @@ const Layout: FC<Props> = ({ children }: Props) => {
                       <Text>your_schema_7</Text>
                     </HStack>
                   </Td>
-                  <Td>
-                    22:28:58 Wednesday, June 26, 2024 (GMT+9)
-                  </Td>
-                  <Td>
-                    This is my awesome schema.
-                  </Td>
+                  <Td>22:28:58 Wednesday, June 26, 2024 (GMT+9)</Td>
+                  <Td>This is my awesome schema.</Td>
                 </Tr>
                 <Tr>
                   <Td>
@@ -360,12 +328,8 @@ const Layout: FC<Props> = ({ children }: Props) => {
                       <Text>your_schema_8</Text>
                     </HStack>
                   </Td>
-                  <Td>
-                    22:28:58 Wednesday, June 26, 2024 (GMT+9)
-                  </Td>
-                  <Td>
-                    This is my awesome schema.
-                  </Td>
+                  <Td>22:28:58 Wednesday, June 26, 2024 (GMT+9)</Td>
+                  <Td>This is my awesome schema.</Td>
                 </Tr>
                 <Tr>
                   <Td>
@@ -377,12 +341,8 @@ const Layout: FC<Props> = ({ children }: Props) => {
                       <Text>your_schema_9</Text>
                     </HStack>
                   </Td>
-                  <Td>
-                    22:28:58 Wednesday, June 26, 2024 (GMT+9)
-                  </Td>
-                  <Td>
-                    This is my awesome schema.
-                  </Td>
+                  <Td>22:28:58 Wednesday, June 26, 2024 (GMT+9)</Td>
+                  <Td>This is my awesome schema.</Td>
                 </Tr>
               </Tbody>
             </Table>

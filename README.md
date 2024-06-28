@@ -7,8 +7,7 @@
 Unity Catalog Explorer is a [TypeScript](https://www.typescriptlang.org/) + [Next.js](https://nextjs.org/) +
 [Chakra UI](https://v2.chakra-ui.com/) based Web UI for the [Unity Catalog OSS](https://www.unitycatalog.io/).
 
-Screenshot
-==============================
+# Screenshot
 
 <p float="left" align="center">
   <img src="./docs/screenshot.gif" width="450px">
