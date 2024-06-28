@@ -19,7 +19,7 @@ export type Props = Omit<TextProps, keyof Pick<TextProps, 'fontSize'>> & {
 };
 
 export const Component: FC<Props> = ({ home, ...props }: Props) => (
-  <Link href={home} variant="title">
+  <Link href={home} variant="none">
     <HStack>
       <Image src="/images/logo-color-dark-blue.svg" h="2rem" alt="Title" />
       <Text {...props} fontSize="1.75rem" as="b">

@@ -33,35 +33,27 @@ export const Variants: Story = {
   },
   render: (args) => (
     <Flex direction="row">
-      <Link {...args} variant="main">
-        Main
+      <Link {...args}>Default</Link>
+      <Link {...args} colorScheme="teal">
+        Default
       </Link>
-      <Link {...args} colorScheme="teal" variant="main">
-        Main
+      <Link {...args} variant="none">
+        None
       </Link>
-      <Link {...args} variant="menu">
-        Menu
+      <Link {...args} colorScheme="teal" variant="none">
+        None
       </Link>
-      <Link {...args} colorScheme="teal" variant="menu">
-        Menu
+      <Link {...args} variant="pale">
+        Pale
       </Link>
-      <Link {...args} variant="route">
-        Route
+      <Link {...args} colorScheme="teal" variant="pale">
+        Pale
       </Link>
-      <Link {...args} colorScheme="teal" variant="route">
-        Route
+      <Link {...args} variant="frosted">
+        Frosted
       </Link>
-      <Link {...args} variant="tab">
-        Tab
-      </Link>
-      <Link {...args} colorScheme="teal" variant="tab">
-        Tab
-      </Link>
-      <Link {...args} variant="title">
-        Title
-      </Link>
-      <Link {...args} colorScheme="teal" variant="title">
-        Title
+      <Link {...args} colorScheme="teal" variant="frosted">
+        Frosted
       </Link>
     </Flex>
   ),

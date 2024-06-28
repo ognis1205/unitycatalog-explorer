@@ -27,7 +27,7 @@ export const Component: FC<Props> = ({
   isSentinel ? (
     <Text {...props}>{name}</Text>
   ) : (
-    <Link href={href} variant="route">
+    <Link href={href}>
       <Text {...props} color="dodger.500">
         {name}
       </Text>

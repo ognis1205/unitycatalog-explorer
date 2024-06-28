@@ -19,7 +19,7 @@ export type Props = Omit<TextProps, keyof Pick<TextProps, 'fontSize'>> & {
 };
 
 export const Component: FC<Props> = ({ url, color, ...props }: Props) => (
-  <Link href={url} isExternal variant="tab">
+  <Link href={url} isExternal variant="none">
     <HStack>
       <Icon color={color} iconName="github" boxSize="1.5rem" />
       <Text color={color} {...props} fontSize="1rem">

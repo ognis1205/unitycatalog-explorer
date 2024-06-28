@@ -27,7 +27,7 @@ export const Component: FC<Props> = ({
   name,
   ...props
 }: Props) => (
-  <Link href={href} variant="tab">
+  <Link href={href} variant="frosted">
     <HStack {...props}>
       <Icon iconName={iconName} />
       <Text>{name}</Text>

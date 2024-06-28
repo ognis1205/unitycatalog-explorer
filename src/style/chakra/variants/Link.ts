@@ -6,71 +6,52 @@
  */
 import { defineStyle, defineStyleConfig } from '@chakra-ui/react';
 
-const main = defineStyle((props) => {
-  const { colorScheme } = props;
-
-  return {
-    color: `${colorScheme}.700`,
-    textDecoration: 'none',
-    _hover: {
-      color: `${colorScheme}.900`,
-      textDecoration: 'none',
-    },
-  };
-});
-
-const menu = defineStyle((props) => {
-  const { colorScheme } = props;
-
-  return {
-    color: `${colorScheme}.700`,
-    textDecoration: 'none',
-    _hover: {
-      color: `${colorScheme}.900`,
-      textDecoration: 'none',
-    },
-  };
-});
-
-const route = defineStyle((props) => {
-  const { colorScheme } = props;
-
-  return {
-    color: `${colorScheme}.700`,
-    textDecoration: 'none',
-    _hover: {
-      color: `${colorScheme}.900`,
-      textDecoration: 'none',
-    },
-  };
-});
-
-const tab = defineStyle((props) => {
-  const { colorScheme } = props;
-
-  return {
-    color: `${colorScheme}.700`,
-    textDecoration: 'none',
-    _hover: {
-      color: `${colorScheme}.900`,
-      textDecoration: 'none',
-    },
-  };
-});
-
-const title = defineStyle({
+const none = defineStyle({
   textDecoration: 'none',
   _hover: {
     textDecoration: 'none',
   },
 });
 
+const pale = defineStyle((props) => {
+  const { colorScheme } = props;
+
+  return {
+    color: `${colorScheme}.600`,
+    border: '1px',
+    borderColor: 'transparent',
+    borderRadius: '4px',
+    textDecoration: 'none',
+    _hover: {
+      color: `${colorScheme}.800`,
+      bg: `${colorScheme}.100`,
+      textDecoration: 'none',
+    },
+  };
+});
+
+const frosted = defineStyle((props) => {
+  const { colorScheme } = props;
+
+  return {
+    color: `${colorScheme}.700`,
+    bg: 'transparent',
+    border: '1px',
+    borderColor: 'transparent',
+    borderRadius: '4px',
+    textDecoration: 'none',
+    _hover: {
+      color: `${colorScheme}.900`,
+      bg: 'rgba(128, 128, 128, 0.1)',
+      textDecoration: 'none',
+    },
+  };
+});
+
 export const config = defineStyleConfig({
   variants: {
-    main,
-    menu,
-    route,
-    tab,
-    title,
+    none,
+    pale,
+    frosted,
   },
 });
