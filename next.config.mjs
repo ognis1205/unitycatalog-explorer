@@ -6,15 +6,24 @@
  * @license Apache-2.0
  */
 const nextConfig = {
-  rewrites: async () => {
-    return {
-      afterFiles: [
-        {
-          source: '/',
-          destination: '/dashboard/catalogs',
-        },
-      ],
-    };
+//  rewrites: async () => {
+//    return {
+//      afterFiles: [
+//        {
+//          source: '/',
+//          destination: '/dashboard/catalogs',
+//        },
+//      ],
+//    };
+//  },
+  redirects: async () => {
+    return [
+      {
+        source: '/',
+        destination: '/dashboard/catalogs',
+        permanent: true,
+      },
+    ];
   },
 };
 
