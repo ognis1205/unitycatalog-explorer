@@ -43,7 +43,7 @@ export const Default: Story = {
 
 export const ColorSchemes: Story = {
   args: {
-    'aria-label': 'Default',
+    'aria-label': 'Color schemes',
   },
   render: (args) => (
     <Flex direction="row">
@@ -57,13 +57,39 @@ export const ColorSchemes: Story = {
 
 export const Sizes: Story = {
   args: {
-    'aria-label': 'Default',
+    'aria-label': 'Sizes',
   },
   render: (args) => (
     <Flex direction="row">
       <IconButton {...args} icon={iconOf('home')} size="sm" />
       <IconButton {...args} icon={iconOf('home')} size="md" />
       <IconButton {...args} icon={iconOf('home')} size="lg" />
+    </Flex>
+  ),
+};
+
+export const Variants: Story = {
+  args: {
+    'aria-label': 'Variants',
+  },
+  render: (args) => (
+    <Flex direction="row">
+      <IconButton {...args} icon={iconOf('home')} />
+      <IconButton {...args} icon={iconOf('home')} colorScheme="teal" />
+      <IconButton {...args} icon={iconOf('home')} variant="pale" />
+      <IconButton
+        {...args}
+        icon={iconOf('home')}
+        colorScheme="teal"
+        variant="pale"
+      />
+      <IconButton {...args} icon={iconOf('home')} variant="frosted" />
+      <IconButton
+        {...args}
+        icon={iconOf('home')}
+        colorScheme="teal"
+        variant="frosted"
+      />
     </Flex>
   ),
 };

@@ -8,10 +8,12 @@ import { extendTheme } from '@chakra-ui/react';
 import { Inter, Rubik } from 'next/font/google';
 
 import { config as buttonConfig } from '@/style/chakra/variants/Button';
+import { config as iconButtonConfig } from '@/style/chakra/variants/IconButton';
 import { config as linkConfig } from '@/style/chakra/variants/Link';
 
 const customComponents = {
   Button: buttonConfig,
+  IconButton: iconButtonConfig,
   Link: linkConfig,
 };
 
