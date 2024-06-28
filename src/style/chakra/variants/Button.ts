@@ -6,7 +6,7 @@
  */
 import { defineStyle, defineStyleConfig } from '@chakra-ui/react';
 
-const main = defineStyle((props) => {
+const ucSolid = defineStyle((props) => {
   const { colorScheme } = props;
 
   return {
@@ -28,7 +28,7 @@ const main = defineStyle((props) => {
   };
 });
 
-const menu = defineStyle((props) => {
+const ucGhost = defineStyle((props) => {
   const { colorScheme } = props;
 
   return {
@@ -45,7 +45,7 @@ const menu = defineStyle((props) => {
   };
 });
 
-const route = defineStyle((props) => {
+const ucRouter = defineStyle((props) => {
   const { colorScheme } = props;
 
   return {
@@ -68,9 +68,12 @@ const route = defineStyle((props) => {
 });
 
 export const config = defineStyleConfig({
+  defaultProps: {
+    variant: 'ucSolid',
+  },
   variants: {
-    main,
-    menu,
-    route,
+    ucSolid,
+    ucGhost,
+    ucRouter,
   },
 });
