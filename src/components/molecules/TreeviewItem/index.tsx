@@ -14,7 +14,6 @@ import { Component as Icon } from '@/components/atoms/Icon';
 import { Component as Text } from '@/components/atoms/Text';
 import { Component as TreeviewChevron } from '@/components/molecules/TreeviewChevron';
 import { Component as TreeviewCollapse } from '@/components/molecules/TreeviewCollapse';
-import { defaultColorOf } from '@/style/chakra/theme';
 
 import type { Props as BoxProps } from '@/components/atoms/Box';
 import type { Toggler as TreeviewChevronToggler } from '@/components/molecules/TreeviewChevron';
@@ -69,8 +68,6 @@ export const Component: FC<Props> = memo(({ asset, ...props }: Props) => {
     [asset.iconName, children, setChildren],
   );
 
-  const Child = (asset: AssetNode) => <Component {...props} asset={asset} />;
-
   return (
     <Box {...props} my="0.5em">
       <HStack gap="0.25em">
@@ -79,7 +76,7 @@ export const Component: FC<Props> = memo(({ asset, ...props }: Props) => {
         )}
         <Icon
           iconName={asset.iconName}
-          color={asset.isDirectory ? defaultColorOf('dodger') : 'gray.500'}
+          color={asset.isDirectory ? 'dodger.500' : 'gray.500'}
         />
         <Text>{asset.name}</Text>
       </HStack>
@@ -90,7 +87,10 @@ export const Component: FC<Props> = memo(({ asset, ...props }: Props) => {
         borderLeft="1px"
         borderColor="gray.100"
       >
-        {children && children.map(Child)}
+        {children &&
+          children.map((asset: AssetNode, index) => (
+            <Component {...props} key={index} asset={asset} />
+          ))}
       </TreeviewCollapse>
     </Box>
   );

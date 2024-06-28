@@ -22,7 +22,7 @@ const customColors = {
     200: '#FCCEFF',
     300: '#FCA8FF',
     400: '#FC74FE',
-    500: '#F43BF6', // default
+    500: '#F43BF6',
     600: '#DA1FD8',
     700: '#B516B0',
     800: '#94148F',
@@ -35,7 +35,7 @@ const customColors = {
     200: '#FFF685',
     300: '#FFEB46',
     400: '#FFDC1B',
-    500: '#FFBC00', // default
+    500: '#FFBC00',
     600: '#E29100',
     700: '#BB6602',
     800: '#984F08',
@@ -43,43 +43,43 @@ const customColors = {
     950: '#482100',
   },
   ucNavy: {
-    50: '#F1F8FE',
-    100: '#E2EFFC',
-    200: '#BEDFF9',
-    300: '#85C4F4',
-    400: '#44A7EC',
-    500: '#1B8BDC',
-    600: '#0E6DBB',
-    700: '#0C5798',
-    800: '#0F4B7D',
-    900: '#113C63', // default
-    950: '#0C2845',
+    50: '#DCEBF9',
+    100: '#BEDAF4',
+    200: '#78B2E8',
+    300: '#378CDD',
+    400: '#1C63A5',
+    500: '#113C63',
+    600: '#0D2F4E',
+    700: '#0A253D',
+    800: '#071727',
+    900: '#040D16',
+    950: '#010509',
   },
   ucDarkBlue: {
-    50: '#F1F8FE',
-    100: '#E1EFFD',
-    200: '#BDDEFA',
-    300: '#82C4F7',
-    400: '#40A6F0',
-    500: '#178BE0',
-    600: '#0A6DBF',
-    700: '#0A579A',
-    800: '#0C4A80',
-    900: '#103F6A',
-    950: '#071A2E', // default
+    50: '#D7E7F9',
+    100: '#AFD0F3',
+    200: '#60A1E7',
+    300: '#1F72CC',
+    400: '#13467C',
+    500: '#071A2E',
+    600: '#051423',
+    700: '#040F1B',
+    800: '#030A12',
+    900: '#010509',
+    950: '#010204',
   },
   jumbo: {
-    50: '#F5F5F6',
-    100: '#E6E6E7',
-    200: '#CFD0D2',
-    300: '#ADAEB3',
-    400: '#82838A', // default
-    500: '#696A71',
-    600: '#5A5B60',
-    700: '#4C4C52',
-    800: '#434347',
-    900: '#3B3B3E',
-    950: '#252627',
+    50: '#F2F2F3',
+    100: '#E7E7E9',
+    200: '#CDCDD0',
+    300: '#B5B6BA',
+    400: '#9B9CA1',
+    500: '#82838A',
+    600: '#68686F',
+    700: '#4F5054',
+    800: '#343437',
+    900: '#1B1B1D',
+    950: '#0C0C0D',
   },
   friarGray: {
     50: '#F6F6F5',
@@ -87,7 +87,7 @@ const customColors = {
     200: '#D1D1D0',
     300: '#B1B1AF',
     400: '#898A86',
-    500: '#7A7B77', // default
+    500: '#7A7B77',
     600: '#5E5E5C',
     700: '#50504E',
     800: '#454644',
@@ -95,17 +95,17 @@ const customColors = {
     950: '#262725',
   },
   bianca: {
-    50: '#F4F6EF', // default
-    100: '#E6EADB',
-    200: '#CBD4B3',
-    300: '#B0BD8C',
-    400: '#A1AE71',
-    500: '#9AA15F',
-    600: '#8B8D52',
-    700: '#767247',
-    800: '#625D3E',
-    900: '#524D35',
-    950: '#2D2A1B',
+    50: '#FFFFFF',
+    100: '#FDFDFC',
+    200: '#FBFBF8',
+    300: '#F8F9F5',
+    400: '#F6F8F2',
+    500: '#F4F6EF',
+    600: '#C9D3B1',
+    700: '#9FB073',
+    800: '#6D7C46',
+    900: '#363E23',
+    950: '#1D2112',
   },
   ivory: {
     50: '#FFFFFE',
@@ -113,7 +113,7 @@ const customColors = {
     200: '#FFFFFC',
     300: '#FFFFFB',
     400: '#FFFFFA',
-    500: '#FFFFF9', // default
+    500: '#FFFFF9',
     600: '#FFFFF7',
     700: '#FFFFF5',
     800: '#FFFFF3',
@@ -126,7 +126,7 @@ const customColors = {
     200: '#BCE1FF',
     300: '#8ECEFF',
     400: '#59B2FF',
-    500: '#459BFF', // default
+    500: '#459BFF',
     600: '#1B71F5',
     700: '#145BE1',
     800: '#1749B6',
@@ -135,32 +135,9 @@ const customColors = {
   },
 };
 
-export type ThemeColor = keyof typeof customColors;
+export type CustomColor = keyof typeof customColors;
 
-export const defaultColorOf = (color: ThemeColor) => {
-  switch (color) {
-    case 'ucPink':
-      return customColors['ucPink']['500'];
-    case 'ucYellow':
-      return customColors['ucYellow']['500'];
-    case 'ucNavy':
-      return customColors['ucNavy']['900'];
-    case 'ucDarkBlue':
-      return customColors['ucDarkBlue']['950'];
-    case 'jumbo':
-      return customColors['jumbo']['400'];
-    case 'friarGray':
-      return customColors['friarGray']['500'];
-    case 'bianca':
-      return customColors['bianca']['50'];
-    case 'ivory':
-      return customColors['ivory']['500'];
-    case 'dodger':
-      return customColors['dodger']['500'];
-    default:
-      return customColors[color]['500'];
-  }
-};
+export const hexValueOf = (color: CustomColor) => customColors[color]['500'];
 
 const rubik = Rubik({
   subsets: ['latin'],

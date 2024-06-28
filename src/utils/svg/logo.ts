@@ -5,7 +5,7 @@
  * @license Apache-2.0
  */
 
-import { defaultColorOf } from '@/style/chakra/theme';
+import { hexValueOf } from '@/style/chakra/theme';
 
 import type {
   SVGMotionPathProps,
@@ -165,8 +165,8 @@ export const svgMotionHexagonDefs: SVGMotionPathProps[] = [
       'L 35.34 24.416',
       'Z',
     ].join(' '),
-    fill: defaultColorOf('ucDarkBlue'),
-    stroke: defaultColorOf('ucDarkBlue'),
+    fill: hexValueOf('ucDarkBlue'),
+    stroke: hexValueOf('ucDarkBlue'),
   } as const,
 ] as const;
 
@@ -179,8 +179,8 @@ export const svgMotionTriangleDefs: SVGMotionPathProps[] = [
       'L 57.5698 23.756',
       'Z',
     ].join(' '),
-    fill: defaultColorOf('ucYellow'),
-    stroke: defaultColorOf('ucYellow'),
+    fill: hexValueOf('ucYellow'),
+    stroke: hexValueOf('ucYellow'),
   } as const,
   {
     d: [
@@ -190,8 +190,8 @@ export const svgMotionTriangleDefs: SVGMotionPathProps[] = [
       'H 57.5698',
       'Z',
     ].join(' '),
-    fill: defaultColorOf('ucYellow'),
-    stroke: defaultColorOf('ucYellow'),
+    fill: hexValueOf('ucYellow'),
+    stroke: hexValueOf('ucYellow'),
   } as const,
   {
     d: [
@@ -201,8 +201,8 @@ export const svgMotionTriangleDefs: SVGMotionPathProps[] = [
       'L 29.27 72.776',
       'Z',
     ].join(' '),
-    fill: defaultColorOf('ucYellow'),
-    stroke: defaultColorOf('ucYellow'),
+    fill: hexValueOf('ucYellow'),
+    stroke: hexValueOf('ucYellow'),
   } as const,
   {
     d: [
@@ -212,8 +212,8 @@ export const svgMotionTriangleDefs: SVGMotionPathProps[] = [
       'H 0.970215',
       'Z',
     ].join(' '),
-    fill: defaultColorOf('ucYellow'),
-    stroke: defaultColorOf('ucYellow'),
+    fill: hexValueOf('ucYellow'),
+    stroke: hexValueOf('ucYellow'),
   } as const,
   {
     d: [
@@ -223,8 +223,8 @@ export const svgMotionTriangleDefs: SVGMotionPathProps[] = [
       'L 0.970215 23.756',
       'Z',
     ].join(' '),
-    fill: defaultColorOf('ucYellow'),
-    stroke: defaultColorOf('ucYellow'),
+    fill: hexValueOf('ucYellow'),
+    stroke: hexValueOf('ucYellow'),
   } as const,
   {
     d: [
@@ -234,8 +234,8 @@ export const svgMotionTriangleDefs: SVGMotionPathProps[] = [
       'H 29.27',
       'Z',
     ].join(' '),
-    fill: defaultColorOf('ucYellow'),
-    stroke: defaultColorOf('ucYellow'),
+    fill: hexValueOf('ucYellow'),
+    stroke: hexValueOf('ucYellow'),
   } as const,
 ] as const;
 
@@ -249,15 +249,15 @@ export const svgMotionSquareDefs: SVGMotionPathProps[] = [
       'L 46.9145 2.46457',
       'Z',
     ].join(' '),
-    fill: defaultColorOf('ucPink'),
-    stroke: defaultColorOf('ucPink'),
+    fill: hexValueOf('ucPink'),
+    stroke: hexValueOf('ucPink'),
   } as const,
   {
     d: ['M 71.08 29.416', 'H 57 V 43.496', 'H 71.08', 'V 29.416', 'Z'].join(
       ' ',
     ),
-    fill: defaultColorOf('ucPink'),
-    stroke: defaultColorOf('ucPink'),
+    fill: hexValueOf('ucPink'),
+    stroke: hexValueOf('ucPink'),
   } as const,
   {
     d: [
@@ -268,8 +268,8 @@ export const svgMotionSquareDefs: SVGMotionPathProps[] = [
       'L 52.0662 51.4746',
       'Z',
     ].join(' '),
-    fill: defaultColorOf('ucPink'),
-    stroke: defaultColorOf('ucPink'),
+    fill: hexValueOf('ucPink'),
+    stroke: hexValueOf('ucPink'),
   } as const,
   {
     d: [
@@ -280,15 +280,15 @@ export const svgMotionSquareDefs: SVGMotionPathProps[] = [
       'L 18.6084 51.4781',
       'Z',
     ].join(' '),
-    fill: defaultColorOf('ucPink'),
-    stroke: defaultColorOf('ucPink'),
+    fill: hexValueOf('ucPink'),
+    stroke: hexValueOf('ucPink'),
   } as const,
   {
     d: ['M 14.08 29.556', 'H 0', 'V 43.636', 'H 14.08', 'V 29.556', 'Z'].join(
       ' ',
     ),
-    fill: defaultColorOf('ucPink'),
-    stroke: defaultColorOf('ucPink'),
+    fill: hexValueOf('ucPink'),
+    stroke: hexValueOf('ucPink'),
   } as const,
   {
     d: [
@@ -299,7 +299,7 @@ export const svgMotionSquareDefs: SVGMotionPathProps[] = [
       'L 23.763 2.47074',
       'Z',
     ].join(' '),
-    fill: defaultColorOf('ucPink'),
-    stroke: defaultColorOf('ucPink'),
+    fill: hexValueOf('ucPink'),
+    stroke: hexValueOf('ucPink'),
   } as const,
 ] as const;

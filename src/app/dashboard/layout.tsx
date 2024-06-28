@@ -33,7 +33,6 @@ import { Component as TreeviewHeader } from '@/components/molecules/TreeviewHead
 import { Component as Navbar } from '@/components/organisms/Navbar';
 import { Component as PaneMain } from '@/components/organisms/PaneMain';
 import { Component as PaneNav } from '@/components/organisms/PaneNav';
-import { defaultColorOf } from '@/style/chakra/theme';
 
 import type { FC, ReactNode } from 'react';
 
@@ -164,22 +163,22 @@ const Layout: FC<Props> = ({ children }: Props) => {
               separator={<PiCaretRightBold color="gray" />}
             >
               <BreadcrumbItem>
-                <BreadcrumbLink href="#" color={defaultColorOf('dodger')}>
+                <BreadcrumbLink href="#" color="dodger.500">
                   your_catalog_0
                 </BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbItem>
-                <BreadcrumbLink href="#" color={defaultColorOf('dodger')}>
+                <BreadcrumbLink href="#" color="dodger.500">
                   your_schema_1
                 </BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbItem isCurrentPage>
-                <BreadcrumbLink href="#" color={defaultColorOf('dodger')}>
+                <BreadcrumbLink href="#" color="dodger.500">
                   your_table_2
                 </BreadcrumbLink>
               </BreadcrumbItem>
             </Breadcrumb>
-            <Button colorScheme="ucDarkBlue">New Catalog</Button>
+            <Button colorScheme="ucNavy">New Catalog</Button>
           </Flex>
           <VStack
             spacing={0}
@@ -217,10 +216,7 @@ const Layout: FC<Props> = ({ children }: Props) => {
                 <Tr>
                   <Td>
                     <HStack gap="0.25em">
-                      <Icon
-                        iconName="schema"
-                        color={defaultColorOf('dodger')}
-                      />
+                      <Icon iconName="schema" color="dodger.500" />
                       <Text>your_schema_0</Text>
                     </HStack>
                   </Td>
@@ -230,10 +226,7 @@ const Layout: FC<Props> = ({ children }: Props) => {
                 <Tr>
                   <Td>
                     <HStack gap="0.25em">
-                      <Icon
-                        iconName="schema"
-                        color={defaultColorOf('dodger')}
-                      />
+                      <Icon iconName="schema" color="dodger.500" />
                       <Text>your_schema_1</Text>
                     </HStack>
                   </Td>
@@ -243,10 +236,7 @@ const Layout: FC<Props> = ({ children }: Props) => {
                 <Tr>
                   <Td>
                     <HStack gap="0.25em">
-                      <Icon
-                        iconName="schema"
-                        color={defaultColorOf('dodger')}
-                      />
+                      <Icon iconName="schema" color="dodger.500" />
                       <Text>your_schema_2</Text>
                     </HStack>
                   </Td>
@@ -256,10 +246,7 @@ const Layout: FC<Props> = ({ children }: Props) => {
                 <Tr>
                   <Td>
                     <HStack gap="0.25em">
-                      <Icon
-                        iconName="schema"
-                        color={defaultColorOf('dodger')}
-                      />
+                      <Icon iconName="schema" color="dodger.500" />
                       <Text>your_schema_3</Text>
                     </HStack>
                   </Td>
@@ -269,10 +256,7 @@ const Layout: FC<Props> = ({ children }: Props) => {
                 <Tr>
                   <Td>
                     <HStack gap="0.25em">
-                      <Icon
-                        iconName="schema"
-                        color={defaultColorOf('dodger')}
-                      />
+                      <Icon iconName="schema" color="dodger.500" />
                       <Text>your_schema_4</Text>
                     </HStack>
                   </Td>
@@ -282,10 +266,7 @@ const Layout: FC<Props> = ({ children }: Props) => {
                 <Tr>
                   <Td>
                     <HStack gap="0.25em">
-                      <Icon
-                        iconName="schema"
-                        color={defaultColorOf('dodger')}
-                      />
+                      <Icon iconName="schema" color="dodger.500" />
                       <Text>your_schema_5</Text>
                     </HStack>
                   </Td>
@@ -295,10 +276,7 @@ const Layout: FC<Props> = ({ children }: Props) => {
                 <Tr>
                   <Td>
                     <HStack gap="0.25em">
-                      <Icon
-                        iconName="schema"
-                        color={defaultColorOf('dodger')}
-                      />
+                      <Icon iconName="schema" color="dodger.500" />
                       <Text>your_schema_6</Text>
                     </HStack>
                   </Td>
@@ -308,10 +286,7 @@ const Layout: FC<Props> = ({ children }: Props) => {
                 <Tr>
                   <Td>
                     <HStack gap="0.25em">
-                      <Icon
-                        iconName="schema"
-                        color={defaultColorOf('dodger')}
-                      />
+                      <Icon iconName="schema" color="dodger.500" />
                       <Text>your_schema_7</Text>
                     </HStack>
                   </Td>
@@ -321,10 +296,7 @@ const Layout: FC<Props> = ({ children }: Props) => {
                 <Tr>
                   <Td>
                     <HStack gap="0.25em">
-                      <Icon
-                        iconName="schema"
-                        color={defaultColorOf('dodger')}
-                      />
+                      <Icon iconName="schema" color="dodger.500" />
                       <Text>your_schema_8</Text>
                     </HStack>
                   </Td>
@@ -334,10 +306,7 @@ const Layout: FC<Props> = ({ children }: Props) => {
                 <Tr>
                   <Td>
                     <HStack gap="0.25em">
-                      <Icon
-                        iconName="schema"
-                        color={defaultColorOf('dodger')}
-                      />
+                      <Icon iconName="schema" color="dodger.500" />
                       <Text>your_schema_9</Text>
                     </HStack>
                   </Td>

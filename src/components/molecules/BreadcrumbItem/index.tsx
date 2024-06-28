@@ -8,7 +8,6 @@
 
 import { Component as Link } from '@/components/atoms/Link';
 import { Component as Text } from '@/components/atoms/Text';
-import { defaultColorOf } from '@/style/chakra/theme';
 
 import type { Props as TextProps } from '@/components/atoms/Text';
 import type { FC } from 'react';
@@ -29,7 +28,7 @@ export const Component: FC<Props> = ({
     <Text {...props}>{name}</Text>
   ) : (
     <Link href={href} variant="route">
-      <Text {...props} color={defaultColorOf('dodger')}>
+      <Text {...props} color="dodger.500">
         {name}
       </Text>
     </Link>

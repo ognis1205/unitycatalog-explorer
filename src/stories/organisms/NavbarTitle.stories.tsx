@@ -6,7 +6,6 @@
  */
 import { Component as Flex } from '@/components/atoms/Flex';
 import { Component as NavbarTitle } from '@/components/organisms/NavbarTitle';
-import { defaultColorOf } from '@/style/chakra/theme';
 
 import type { Meta, StoryObj } from '@storybook/react';
 
@@ -34,10 +33,10 @@ export const Colors: Story = {
   },
   render: (args) => (
     <Flex direction="column">
-      <NavbarTitle {...args} color={defaultColorOf('ucPink')} />
-      <NavbarTitle {...args} color={defaultColorOf('ucYellow')} />
-      <NavbarTitle {...args} color={defaultColorOf('ucNavy')} />
-      <NavbarTitle {...args} color={defaultColorOf('ucDarkBlue')} />
+      <NavbarTitle {...args} color="ucPink.500" />
+      <NavbarTitle {...args} color="ucYellow.500" />
+      <NavbarTitle {...args} color="ucNavy.500" />
+      <NavbarTitle {...args} color="ucDarkBlue.500" />
     </Flex>
   ),
 };

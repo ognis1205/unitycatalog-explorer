@@ -6,7 +6,7 @@
  */
 'use client';
 
-import { defaultColorOf } from '@/style/chakra/theme';
+import { hexValueOf } from '@/style/chakra/theme';
 import { svgDefs, svgTextDefs } from '@/utils/svg/title';
 
 import type { SVGSVGProps } from '@/utils/svg';
@@ -25,7 +25,7 @@ export const Component: FC<Props> = ({
   color = 'default',
   ...props
 }: Props) => {
-  let tColor = defaultColorOf('ucDarkBlue');
+  let tColor = hexValueOf('ucDarkBlue');
 
   switch (color) {
     case 'black':

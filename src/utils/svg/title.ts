@@ -5,7 +5,7 @@
  * @license Apache-2.0
  */
 
-import { defaultColorOf } from '@/style/chakra/theme';
+import { hexValueOf } from '@/style/chakra/theme';
 
 import type {
   SVGMotionPathProps,
@@ -266,8 +266,8 @@ export const svgMotionTextDefs: SVGMotionPathProps[] = [
       'A 54.642 54.642 0 0 1 0 43.9',
       'Z',
     ].join(' '),
-    fill: defaultColorOf('ucDarkBlue'),
-    stroke: defaultColorOf('ucDarkBlue'),
+    fill: hexValueOf('ucDarkBlue'),
+    stroke: hexValueOf('ucDarkBlue'),
     vectorEffect: 'non-scaling-stroke',
   } as const,
 ] as const;

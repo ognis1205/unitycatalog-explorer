@@ -49,21 +49,21 @@ export const Variants: Story = {
   args: {},
   render: (args) => (
     <Flex direction="row">
-      <Button {...args}>UC Solid</Button>
+      <Button {...args}>Default</Button>
       <Button {...args} colorScheme="teal">
-        UC Solid
+        Default
       </Button>
-      <Button {...args} variant="ucGhost">
-        UC Ghost
+      <Button {...args} variant="pale">
+        Pale
       </Button>
-      <Button {...args} colorScheme="teal" variant="ucGhost">
-        UC Ghost
+      <Button {...args} colorScheme="teal" variant="pale">
+        Pale
       </Button>
-      <Button {...args} variant="ucRouter">
-        UC Router
+      <Button {...args} variant="frosted">
+        Frosted
       </Button>
-      <Button {...args} colorScheme="teal" variant="ucRouter">
-        UC Router
+      <Button {...args} colorScheme="teal" variant="frosted">
+        Frosted
       </Button>
     </Flex>
   ),

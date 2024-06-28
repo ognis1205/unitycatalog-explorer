@@ -11,7 +11,6 @@ import { Component as VStack } from '@/components/atoms/VStack';
 import { Component as Tab } from '@/components/molecules/Tab';
 import { Component as NavbarFeedback } from '@/components/organisms/NavbarFeedback';
 import { Component as NavbarTitle } from '@/components/organisms/NavbarTitle';
-import { defaultColorOf } from '@/style/chakra/theme';
 
 import type { Props as TabProps } from '@/components/molecules/Tab';
 import type { FC } from 'react';
@@ -33,8 +32,8 @@ export const Component: FC<Props> = ({ path, home, fbUrl, items }: Props) => (
       alignItems="center"
       justifyContent="space-between"
     >
-      <NavbarTitle home={home} color={defaultColorOf('ucDarkBlue')} />
-      <NavbarFeedback url={fbUrl} color={defaultColorOf('dodger')} />
+      <NavbarTitle home={home} color="ucDarkBlue.500" />
+      <NavbarFeedback url={fbUrl} color="gray" />
     </Flex>
     <Flex
       px={6}
