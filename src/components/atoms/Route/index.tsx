@@ -23,7 +23,7 @@ export type Props = Omit<
 };
 
 export const Component: FC<Props> = ({ children, href, ...props }: Props) => (
-  <Button href={href} {...props} rounded="full" as={Link} variant="route">
+  <Button href={href} {...props} rounded="full" as={Link} variant="pale">
     {children}
   </Button>
 );
